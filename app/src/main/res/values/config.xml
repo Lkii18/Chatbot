@@ -27,5 +27,5 @@
 
     <!-- REPLACE the URL with TTS URL provided in the service credentials -->
     <string name="TTS_url">https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/74a435e6-f99a-45a1-8fca-29e03a017678</string>
-
+    // This is a comment
 </resources>
