@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
     inputMessage = findViewById(R.id.message);
     btnSend = findViewById(R.id.btn_send);
-    btnRecord = findViewById(R.id.btn_record);
+    //btnRecord = findViewById(R.id.btn_record);
     String customFont = "Montserrat-Regular.ttf";
     Typeface typeface = Typeface.createFromAsset(getAssets(), customFont);
     inputMessage.setTypeface(typeface);
@@ -150,12 +150,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnRecord.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                recordMessage();
-            }
-        });
+        //btnRecord.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View v) {
+        //        recordMessage();
+        //    }
+       // });
 
         createServices();
         sendMessage();
@@ -400,14 +400,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void enableMicButton() {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                btnRecord.setEnabled(true);
-            }
-        });
-    }
+    //private void enableMicButton() {
+    //    runOnUiThread(new Runnable() {
+    //        @Override
+    //        public void run() {
+    //            btnRecord.setEnabled(true);
+    //        }
+    //    });
+    //}
 
     private void showError(final Exception e) {
         runOnUiThread(new Runnable() {
@@ -445,12 +445,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onError(Exception e) {
             showError(e);
-            enableMicButton();
+            //enableMicButton();
         }
 
         @Override
         public void onDisconnected() {
-            enableMicButton();
+            //nableMicButton();
         }
 
     }
