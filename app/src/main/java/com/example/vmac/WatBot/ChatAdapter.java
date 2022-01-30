@@ -1,11 +1,7 @@
 package com.example.vmac.WatBot;
 
-/**
- * Created by VMac on 17/11/16.
- */
-
 import android.app.Activity;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.*;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -91,10 +87,6 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             message = (TextView) itemView.findViewById(R.id.message);
             image = (ImageView) itemView.findViewById(R.id.image);
 
-            //TODO: Uncomment this if you want to use a custom Font
-            /*String customFont = "Montserrat-Regular.ttf";
-            Typeface typeface = Typeface.createFromAsset(itemView.getContext().getAssets(), customFont);
-            message.setTypeface(typeface);*/
 
         }
     }

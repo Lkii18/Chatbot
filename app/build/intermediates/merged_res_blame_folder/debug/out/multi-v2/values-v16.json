@@ -4,7 +4,17 @@
             "outputFile": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tw215\\.gradle\\caches\\transforms-3\\3383023875b4add0d3783e46c4460f0e\\transformed\\appcompat-v7-28.0.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\tw215\\.gradle\\caches\\transforms-3\\b2350dd42fec0af8521f83d59b492efe\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tw215\\.gradle\\caches\\transforms-3\\d691b2c4cce06c2384dc4faad7b36233\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tw215\\.gradle\\caches\\transforms-3\\0c38ac38adefd5f976c98d317e9f922d\\transformed\\support-compat-28.0.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

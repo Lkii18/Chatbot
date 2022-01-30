@@ -1,67 +1,31 @@
 [
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_face.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xhdpi\\ic_face.png"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\menu\\menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_splash.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\drawable\\backgroud_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_face.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_face.png"
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_face.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_face.png"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_send.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_face.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_face.png"
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_splash.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\drawable\\backgroud_splash.xml"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_send.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-mdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_face.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-hdpi\\ic_face.png"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_face.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-mdpi\\ic_face.png"
-    },
-    {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_send.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-hdpi\\ic_send.png"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_watson.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_content_chat_room.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\content_chat_room.xml"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_mic.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_mic.png"
     },
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_watbot.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\drawable\\bg_bubble_watbot.xml"
-    },
-    {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_mic.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_mic.png"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_self.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\chat_item_self.xml"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_send.png.flat",
@@ -80,15 +44,55 @@
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-mdpi\\ic_mic.png"
     },
     {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_face.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xhdpi\\ic_face.png"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_face.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_face.png"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_face.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-hdpi\\ic_face.png"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_face.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-mdpi\\ic_face.png"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_google_maps.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\activity_google_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_watson.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_content_chat_room.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\content_chat_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_watbot.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\drawable\\bg_bubble_watbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_self.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\chat_item_self.xml"
+    },
+    {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_send.png.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\mipmap-xhdpi\\ic_send.png"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_self.xml.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\drawable\\bg_bubble_self.xml"
-    },
-    {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\src\\main\\res\\layout\\activity_main.xml"
     }
 ]

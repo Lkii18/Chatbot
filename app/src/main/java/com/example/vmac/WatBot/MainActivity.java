@@ -2,19 +2,16 @@ package com.example.vmac.WatBot;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.*;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +19,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.ibm.cloud.sdk.core.http.HttpMediaType;
 import com.ibm.cloud.sdk.core.http.Response;
@@ -49,6 +50,8 @@ import com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import GoogleMap.GoogleMapsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -90,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+      Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
+      startActivity(intent);
 
     mContext = getApplicationContext();
 
