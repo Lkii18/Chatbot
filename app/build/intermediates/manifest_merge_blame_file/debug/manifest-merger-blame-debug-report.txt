@@ -67,8 +67,8 @@
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 35-->[androidx.core:core:1.7.0] C:\Users\tw215\.gradle\caches\transforms-3\b2350dd42fec0af8521f83d59b492efe\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 36        android:debuggable="true"
-37        android:icon="@mipmap/ic_face"
-37-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-39
+37        android:icon="@mipmap/icon"
+37-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-36
 38        android:label="@string/app_name"
 38-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:21:9-41
 39        android:supportsRtl="true"

@@ -23,9 +23,9 @@
 
     <!--Watson Text To Speech(TTS) service credentials-->
     <!-- REPLACE `TTS_API_KEY_HERE` with Watson Text to Speech service API Key-->
-    <string name="TTS_apikey">29h0A_b4pmYIn6VDeFMEibqP26UuO9hjCydqAgtPlOqi</string>
+    <string name="TTS_apikey">QVTG6MVuLEOeRMdUon8HdfusPz1srKyyGLQFvXgdzIQP</string>
 
     <!-- REPLACE the URL with TTS URL provided in the service credentials -->
-    <string name="TTS_url">https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/74a435e6-f99a-45a1-8fca-29e03a017678</string>
+    <string name="TTS_url">https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/51a2bcde-9f81-4367-8edd-669cf5e90cc3</string>
     // This is a comment
 </resources>

@@ -12,12 +12,15 @@ import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.*;
+
+import android.os.Handler;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -82,8 +85,9 @@ public class MainActivity extends AppCompatActivity {
     watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator(mContext.getString(R.string.assistant_apikey)));
     watsonAssistant.setServiceUrl(mContext.getString(R.string.assistant_url));
 
-    textToSpeech = new TextToSpeech(new IamAuthenticator((mContext.getString(R.string.TTS_apikey))));
-    textToSpeech.setServiceUrl(mContext.getString(R.string.TTS_url));
+    //Save quote
+    //textToSpeech = new TextToSpeech(new IamAuthenticator((mContext.getString(R.string.TTS_apikey))));
+    //textToSpeech.setServiceUrl(mContext.getString(R.string.TTS_url));
 
     speechService = new SpeechToText(new IamAuthenticator(mContext.getString(R.string.STT_apikey)));
     speechService.setServiceUrl(mContext.getString(R.string.STT_url));
@@ -93,8 +97,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-      Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
-      startActivity(intent);
+    requestPermissions();
 
     mContext = getApplicationContext();
 
@@ -135,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view, final int position) {
                 Message audioMessage = (Message) messageArrayList.get(position);
                 if (audioMessage != null && !audioMessage.getMessage().isEmpty()) {
-                    new SayTask().execute(audioMessage.getMessage());
+                    //new SayTask().execute(audioMessage.getMessage());
                 }
             }
 
@@ -239,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Tap on the message for Voice", Toast.LENGTH_LONG).show();
 
                         }
-
+                        ActionAfterResponse(inputMessage.getText().toString().trim());
                         this.inputMessage.setText("");
                         mAdapter.notifyDataSetChanged();
 
@@ -278,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
                                                     messageArrayList.add(outMessage);
 
                                                     // speak the message
-                                                    new SayTask().execute(outMessage.getMessage());
+                                                    //new SayTask().execute(outMessage.getMessage());
                                                     break;
 
                                                 case "option":
@@ -296,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
                                                     messageArrayList.add(outMessage);
 
                                                     // speak the message
-                                                    new SayTask().execute(outMessage.getMessage());
+                                                    //new SayTask().execute(outMessage.getMessage());
                                                     break;
 
                                                 case "image":
@@ -304,7 +307,7 @@ public class MainActivity extends AppCompatActivity {
                                                     messageArrayList.add(outMessage);
 
                                                     // speak the description
-                                                    new SayTask().execute("You received an image: " + outMessage.getTitle() + outMessage.getDescription());
+                                                    //new SayTask().execute("You received an image: " + outMessage.getTitle() + outMessage.getDescription());
                                                     break;
                                                 default:
                                                     Log.e("Error", "Unhandled message type");
@@ -425,7 +428,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private class SayTask extends AsyncTask<String, Void, String> {
+   /* private class SayTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             streamPlayer.playStream(textToSpeech.synthesize(new SynthesizeOptions.Builder()
@@ -435,7 +438,7 @@ public class MainActivity extends AppCompatActivity {
                     .build()).execute().getResult());
             return "Did synthesize";
         }
-    }
+    }*/
 
     //Watson Speech to Text Methods.
     private class MicrophoneRecognizeDelegate extends BaseRecognizeCallback {
@@ -460,7 +463,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void ActionAfterResponse(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        switch(message){
+            case "restaurant":
+                Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
+                intent.putExtra("message",message);
+                startActivity(intent);
+                break;
+        }
 
+
+
+    }
+    private void requestPermissions() {
+        ActivityCompat.requestPermissions(this, new String[]{
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+    }
 }
 
 

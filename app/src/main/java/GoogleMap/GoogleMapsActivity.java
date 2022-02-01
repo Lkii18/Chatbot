@@ -14,6 +14,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 
 import com.example.vmac.WatBot.BuildConfig;
+import com.example.vmac.WatBot.MainActivity;
 import com.example.vmac.WatBot.R;
 import com.example.vmac.WatBot.databinding.ActivityGoogleMapsBinding;
 import com.google.android.gms.common.ConnectionResult;
@@ -31,6 +32,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 
+import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
@@ -98,7 +100,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     // A default location (Sydney, Australia) and default zoom to use when location permission is
     // not granted.
-    private final LatLng defaultLocation = new LatLng(-33.8523341, 151.2106085);
+    private final LatLng defaultLocation = new LatLng(22.302711, 114.177216);
     private static final int DEFAULT_ZOOM = 15;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private boolean locationPermissionGranted;
@@ -121,15 +123,26 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     FusedLocationProviderClient mFusedLocationClient;
     int PERMISSION_ID = 44;
-
+    String attraction = "attraction", restaurant = "restaurant";
+    String SentMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            SentMessage = extras.getString("message");
+
+        }
+
         //Find current Location
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
+
+
+
+
         // Retrieve location and camera position from saved instance state.
         if (savedInstanceState != null) {
             lastKnownLocation = savedInstanceState.getParcelable(KEY_LOCATION);
@@ -148,6 +161,17 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        //Check Corresponding Actions after 5 secs(need to be 5 sec to get location)
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                System.out.println("3+"+latitide);
+                ActionFliter();
+            }
+        }, 5000);
+
+
     }
 
 
@@ -155,8 +179,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
+
             // here to request the missing permissions, and then overriding
             //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
             //                                          int[] grantResults)
@@ -164,13 +187,25 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
+
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
     }
 
-    public void onClick(View v) {
-        String attraction = "attraction", restaurant = "restaurant";
+    public void ActionFliter() {
+
+        switch (SentMessage) {
+            case "restaurant":
+                zoomToCurrentLocation();
+
+                break;
+
+        }
+    }
+
+    public void zoomToCurrentLocation(){
+
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
         mMap.clear();
@@ -179,9 +214,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         transferData[1] = url;
 
         getNearbyPlaces.execute(transferData);
-        Toast.makeText(this, "Searching for Nearby Restaurants...", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Showing Nearby Restaurants...", Toast.LENGTH_SHORT).show();
 
+        Toast.makeText(this, "Searching for Nearby Restaurants...", Toast.LENGTH_SHORT).show();
     }
 
     private String getUrl(double latitide, double longitude, String nearbyPlace) {

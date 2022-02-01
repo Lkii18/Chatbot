@@ -195,7 +195,7 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tw215\.gradle\
 	android:label
 		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:21:9-41
 	android:icon
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-39
+		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-36
 	android:allowBackup
 		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
