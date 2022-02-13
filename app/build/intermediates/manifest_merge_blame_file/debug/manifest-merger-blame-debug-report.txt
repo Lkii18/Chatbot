@@ -6,43 +6,43 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+8-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+9-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:6:5-67
-11-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:6:22-64
+11-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:7:5-81
-12-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:7:22-78
+12-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:22-78
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:8:5-76
-13-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:8:22-73
+13-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:5-76
+13-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:22-73
 14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-14-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:9:5-76
-14-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:9:22-73
+14-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:5-76
+14-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:22-73
 15    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-15-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:10:5-79
-15-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:10:22-76
+15-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:22-76
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:11:5-79
-16-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:11:22-76
+16-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:5-79
+16-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:22-76
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:12:5-71
-17-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:12:22-68
+17-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:5-71
+17-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:22-68
 18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-18-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:13:5-79
-18-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:13:22-76
+18-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:5-79
+18-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:22-76
 19    <uses-permission android:name="com.google.android.providers.gsf.permission.Read_GSERVICES" />
-19-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:14:5-98
-19-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:14:22-95
+19-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:5-98
+19-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:22-95
 20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-20-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:15:5-81
-20-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:15:22-78
+20-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:5-81
+20-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:22-78
 21    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-21-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:16:5-85
-21-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:16:22-82
+21-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:16:5-85
+21-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:16:22-82
 22
 23    <uses-feature
 23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
@@ -61,21 +61,21 @@
 31    </queries>
 32
 33    <application
-33-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:18:5-57:19
+33-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:18:5-57:19
 34        android:allowBackup="true"
-34-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:19:9-35
+34-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:19:9-35
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 35-->[androidx.core:core:1.7.0] C:\Users\tw215\.gradle\caches\transforms-3\b2350dd42fec0af8521f83d59b492efe\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 36        android:debuggable="true"
 37        android:icon="@mipmap/icon"
-37-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-36
+37-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:20:9-36
 38        android:label="@string/app_name"
-38-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:21:9-41
+38-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:21:9-41
 39        android:supportsRtl="true"
-39-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:22:9-35
+39-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:22:9-35
 40        android:testOnly="true"
 41        android:theme="@style/AppTheme" >
-41-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:23:9-40
+41-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:23:9-40
 42
 43        <!--
 44             TODO: Before you run your application, you need a Google Maps API key.
@@ -90,43 +90,43 @@
 53        -->
 54        <meta-data
 55            android:name="com.google.android.geo.API_KEY"
-55-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:37:13-58
+55-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:37:13-58
 56            android:value="AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0" />
-56-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:38:13-44
+56-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:38:13-44
 57
 58        <activity
-58-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:40:9-42:52
+58-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:40:9-42:52
 59            android:name="com.example.vmac.WatBot.MainActivity"
-59-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:41:13-41
+59-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:41:13-41
 60            android:screenOrientation="portrait" />
-60-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:42:13-49
+60-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:42:13-49
 61        <activity
-61-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:43:9-53:20
+61-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:43:9-53:20
 62            android:name="com.example.vmac.WatBot.SplashActivity"
-62-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:44:13-43
+62-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:44:13-43
 63            android:exported="true"
-63-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:47:13-36
+63-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:47:13-36
 64            android:screenOrientation="portrait"
-64-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:45:13-49
+64-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:45:13-49
 65            android:theme="@style/SplashTheme" >
-65-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:46:13-47
+65-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:46:13-47
 66            <intent-filter>
-66-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:48:13-52:29
+66-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:48:13-52:29
 67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:49:17-69
-67-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:49:25-66
+67-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:49:17-69
+67-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:49:25-66
 68
 69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:51:17-77
-69-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:51:27-74
+69-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:51:17-77
+69-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:51:27-74
 70            </intent-filter>
 71        </activity>
 72        <activity
-72-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:54:9-56:52
+72-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:54:9-56:52
 73            android:name="GoogleMap.GoogleMapsActivity"
-73-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:55:13-56
+73-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:55:13-56
 74            android:screenOrientation="portrait" />
-74-->C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:56:13-49
+74-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:56:13-49
 75
 76        <provider
 76-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:12:9-21:20

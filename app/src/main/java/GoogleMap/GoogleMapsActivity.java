@@ -1,7 +1,6 @@
 package GoogleMap;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
@@ -9,83 +8,54 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 
 import com.example.vmac.WatBot.BuildConfig;
-import com.example.vmac.WatBot.MainActivity;
 import com.example.vmac.WatBot.R;
-import com.example.vmac.WatBot.databinding.ActivityGoogleMapsBinding;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 // From Google
-import android.content.DialogInterface;
 import android.content.pm.PackageManager;
-import android.location.Location;
-import android.os.Bundle;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 import com.google.android.libraries.places.api.Places;
-import com.google.android.libraries.places.api.model.Place;
-import com.google.android.libraries.places.api.model.PlaceLikelihood;
-import com.google.android.libraries.places.api.net.FindCurrentPlaceRequest;
-import com.google.android.libraries.places.api.net.FindCurrentPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
 
-import java.util.Arrays;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 //From Geeks for Geeks
-import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private double latitide=22.302711,  longitude=114.177216;
+    private double latitude =22.302711,  longitude=114.177216;
     private int ProximityRadius = 10000;
-    public String TestLocation = "ShaTin";
+    public String url;
 
     private static final String TAG = GoogleMapsActivity.class.getSimpleName();
     private GoogleMap mMap;
@@ -119,20 +89,23 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
     private String[] likelyPlaceAddresses;
     private List[] likelyPlaceAttributions;
     private LatLng[] likelyPlaceLatLngs;
-
+    public String LatLngOfHKRegions[][]= new String[18][2];
 
     FusedLocationProviderClient mFusedLocationClient;
     int PERMISSION_ID = 44;
+    public String[] dialogCombination=new String[2]; // possibilities of every choices of the users.
     String attraction = "attraction", restaurant = "restaurant";
     String SentMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps);
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            SentMessage = extras.getString("message");
+        //Get the message sent by user
+        Intent intent = getIntent();
+        if (intent != null) {
+            dialogCombination = intent.getStringArrayExtra("dialogCombination");
 
         }
 
@@ -166,7 +139,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                System.out.println("3+"+latitide);
+
                 ActionFliter();
             }
         }, 5000);
@@ -195,27 +168,97 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     public void ActionFliter() {
 
-        switch (SentMessage) {
-            case "restaurant":
-                zoomToCurrentLocation();
-
+        switch (dialogCombination[0]) {
+            case "FindingRestaurants":
+                if(dialogCombination[1].equals("n/a")) {
+                    System.out.println("Test 1 is:"+dialogCombination[1]);
+                    zoomToCurrentLocation("restaurant");
+                    break;
+                }
+                else {
+                    System.out.println("Test 2 is:"+dialogCombination[1]);
+                    zoomToSpecificLocation("restaurant");}
+                break;
+            case "FindingAttractions":
+                if(dialogCombination[1].equals("n/a"))
+                    zoomToCurrentLocation("attraction");
+                else
+                    zoomToSpecificLocation("attraction");
                 break;
 
         }
     }
 
-    public void zoomToCurrentLocation(){
+    //IF user want to know the restaurant or attractions nearby:
+    public void zoomToCurrentLocation(String type){
 
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
         mMap.clear();
-        String url = getUrl(latitide, longitude, restaurant);
+        if(type == "restaurant")
+            url = getUrl(latitude, longitude, "restaurant");
+        else{
+            url = getUrl(latitude, longitude, "tourist_attraction");
+        }
         transferData[0] = mMap;
         transferData[1] = url;
 
         getNearbyPlaces.execute(transferData);
 
         Toast.makeText(this, "Searching for Nearby Restaurants...", Toast.LENGTH_SHORT).show();
+    }
+
+    //IF user want to know the restaurant or attractions in a specific region:
+    public void zoomToSpecificLocation(String type){
+
+        Object transferData[] = new Object[2];
+        GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+        mMap.clear();
+
+        try{
+            JSONObject jsonObject = new JSONObject(readCoordinates());
+            JSONArray jsonArray = jsonObject.getJSONArray("regions");
+            for(int i=0; i<jsonArray.length();i++) {
+                if (jsonArray.getJSONObject(i).getString("name").equals(dialogCombination[1]))
+                {
+                    System.out.println("JsonReader is running!");
+                    latitude =Double.parseDouble(jsonArray.getJSONObject(i).getString("latitude"));
+                    longitude=Double.parseDouble(jsonArray.getJSONObject(i).getString("longitude"));
+                    break;
+                }
+            }
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+
+        if(type == "restaurant")
+            url = getUrl(latitude, longitude, "restaurant");
+        else{
+            url = getUrl(latitude, longitude, "tourist_attraction");
+        }
+        transferData[0] = mMap;
+        transferData[1] = url;
+
+        getNearbyPlaces.execute(transferData);
+
+        Toast.makeText(this, "Searching for the Restaurants in specific location", Toast.LENGTH_SHORT).show();
+    }
+
+    private String readCoordinates(){
+        String jsonString=null;
+        try {
+            InputStream is = getAssets().open("Coordinates.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            jsonString = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return jsonString;
+
     }
 
     private String getUrl(double latitide, double longitude, String nearbyPlace) {
@@ -253,8 +296,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                         if (location == null) {
                             requestNewLocationData();
                         } else {
-                            latitide=location.getLatitude();
-                            longitude=location.getLongitude() ;
+                            latitude =location.getLatitude();
+                            longitude=location.getLongitude();
                         }
                     }
                 });
@@ -291,8 +334,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         @Override
         public void onLocationResult(LocationResult locationResult) {
             Location mLastLocation = locationResult.getLastLocation();
-            latitide=mLastLocation.getLatitude();
-            longitude=mLastLocation.getLongitude() ;
+            latitude =mLastLocation.getLatitude();
+            longitude=mLastLocation.getLongitude();
         }
     };
     private boolean checkPermissions() {

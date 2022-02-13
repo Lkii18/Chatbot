@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tw215\\AndroidStudioProjects\\Chatbots\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
+            "outputFile": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tw215\\.gradle\\caches\\transforms-3\\70d8fc0940adfb7ccaaf77b2dafa70a6\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-de\\values.xml",

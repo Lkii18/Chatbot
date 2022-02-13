@@ -81,6 +81,12 @@ public class MainActivity extends AppCompatActivity {
   private SpeechToText speechService;
   private TextToSpeech textToSpeech;
 
+  //All possibilites of dialog combination.
+  String[] dialogCombination= {null,null};
+  //All HK region, used for searching inputted message.
+  public static String[] hkRegion= {"Tsuen Wan","ShaTin","Central and Western","Eastern District","Islands District","Kowloon City","Kwai Tsing","Kwun Tong","North District","Saigon","Sham Shui Po","Southern District","Tai Po","Tuen Mun","Wan Chai","Wong Tai Sin","Yau Tsim Mong","Yuen Long"};
+
+
   private void createServices() {
     watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator(mContext.getString(R.string.assistant_apikey)));
     watsonAssistant.setServiceUrl(mContext.getString(R.string.assistant_url));
@@ -464,17 +470,65 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ActionAfterResponse(String message){
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-        switch(message){
-            case "restaurant":
-                Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
-                intent.putExtra("message",message);
-                startActivity(intent);
-                break;
+
+
+            switch (message) {
+                case "Find a restaurant":
+                    dialogCombination[0] = "FindingRestaurants";
+                    break;
+                case "Find an attraction":
+                    dialogCombination[0] = "FindingAttractions";
+                case "Find nearby restaurants":
+                    dialogCombination[0] = "FindingRestaurants";
+                    dialogCombination[1] = "n/a";
+                    break;
+                case "Find nearby attractions":
+                    dialogCombination[0] = "FindingAttractions";
+                    dialogCombination[1] = "n/a";
+                    break;
+                case "Rating":
+                    Intent Rating = new Intent(MainActivity.this, RatingActivity.class);
+                    startActivity(Rating);
+                    break;
+                case "View Rating":
+                    Intent ViewRating = new Intent(MainActivity.this, ViewRatingActivity.class);
+                    startActivity(ViewRating);
+                    break;
+                default:
+                    for(int i=0;i<hkRegion.length;i++)
+                    {
+                        if (message.equals(hkRegion[i]))
+                        {
+                            dialogCombination[1] = message;
+                            break;
+                        }
+                    }
+                    break;
+            }
+            if(isdialogcompleted())
+                moveToMap(dialogCombination);
+    }
+    private boolean isdialogcompleted(){
+        for(int i=0;i<dialogCombination.length;i++)
+        {
+            if (dialogCombination[i]==null||dialogCombination[i].equals(""))
+            {
+                System.out.println("The dialog is not completed");
+                return false;
+            }
+
         }
-
-
-
+        return true;
+    }
+    private void moveToMap(String[] InputtedDialog)
+    {
+        Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
+        intent.putExtra("dialogCombination", InputtedDialog);
+        startActivity(intent);
+        for(int i=0;i<dialogCombination.length;i++)
+        {
+            dialogCombination[i]="";
+        }
     }
     private void requestPermissions() {
         ActivityCompat.requestPermissions(this, new String[]{

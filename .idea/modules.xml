@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chatbots.iml" filepath="$PROJECT_DIR$/.idea/modules/Chatbots.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chatbots.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chatbots.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatbotTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatbotTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ChatbotTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ChatbotTest.app.iml" />
     </modules>
   </component>
 </project>

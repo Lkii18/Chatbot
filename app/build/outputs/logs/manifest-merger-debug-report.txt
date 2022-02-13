@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.geo.API_KEY
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:36:9-38:47
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:36:9-38:47
 	android:value
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:38:13-44
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:38:13-44
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:37:13-58
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:37:13-58
 manifest
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [androidx.databinding:viewbinding:7.1.0] C:\Users\tw215\.gradle\caches\transforms-3\1149d2f18ab91adb7057289b78ca26e0\transformed\jetified-viewbinding-7.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\88c6c15a8ab8c2f62a02f25e907dd031\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:2:1-24:12
@@ -71,25 +71,25 @@ MERGED from [com.android.volley:volley:1.2.1] C:\Users\tw215\.gradle\caches\tran
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\tw215\.gradle\caches\transforms-3\7f0d5f60552d7a8950da5fadbe3126dd\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tw215\.gradle\caches\transforms-3\2c54ee2acbd10ae7c8a09ad141e33000\transformed\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tw215\.gradle\caches\transforms-3\db558134bf54d1bf197ec41a8f5fa1df\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:1-59:12
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:1-59:12
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
@@ -97,27 +97,27 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.g
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:5-76
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:10:5-76
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:10:5-76
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:8:22-73
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:9:5-76
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:9:22-73
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
@@ -125,31 +125,31 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:12:5-71
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:12:22-68
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:22-68
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#com.google.android.providers.gsf.permission.Read_GSERVICES
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:14:5-98
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:5-98
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:14:22-95
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:22-95
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:15:5-81
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:15:22-78
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:16:5-85
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:16:5-85
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:16:22-82
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:16:22-82
 application
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:18:5-57:19
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:18:5-57:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\88c6c15a8ab8c2f62a02f25e907dd031\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\88c6c15a8ab8c2f62a02f25e907dd031\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:11:5-22:19
@@ -191,51 +191,51 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tw215\.gradle\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\tw215\.gradle\caches\transforms-3\b2350dd42fec0af8521f83d59b492efe\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:21:9-41
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:21:9-41
 	android:icon
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:20:9-36
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:20:9-36
 	android:allowBackup
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:23:9-40
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:23:9-40
 activity#com.example.vmac.WatBot.MainActivity
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:40:9-42:52
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:40:9-42:52
 	android:screenOrientation
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:42:13-49
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:41:13-41
 activity#com.example.vmac.WatBot.SplashActivity
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:43:9-53:20
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:43:9-53:20
 	android:screenOrientation
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:45:13-49
 	android:exported
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:47:13-36
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:47:13-36
 	android:theme
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:46:13-47
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:46:13-47
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:44:13-43
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:44:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:48:13-52:29
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:49:17-69
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:49:25-66
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:51:17-77
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:51:27-74
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:51:27-74
 activity#GoogleMap.GoogleMapsActivity
-ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:54:9-56:52
+ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:54:9-56:52
 	android:screenOrientation
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:56:13-49
 	android:name
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml:55:13-56
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:55:13-56
 uses-sdk
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.1.0] C:\Users\tw215\.gradle\caches\transforms-3\1149d2f18ab91adb7057289b78ca26e0\transformed\jetified-viewbinding-7.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.1.0] C:\Users\tw215\.gradle\caches\transforms-3\1149d2f18ab91adb7057289b78ca26e0\transformed\jetified-viewbinding-7.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\88c6c15a8ab8c2f62a02f25e907dd031\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
@@ -356,16 +356,16 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tw215\.gradle\
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tw215\.gradle\caches\transforms-3\2c54ee2acbd10ae7c8a09ad141e33000\transformed\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tw215\.gradle\caches\transforms-3\db558134bf54d1bf197ec41a8f5fa1df\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tw215\.gradle\caches\transforms-3\db558134bf54d1bf197ec41a8f5fa1df\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tw215\AndroidStudioProjects\Chatbots\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 provider#androidx.core.content.FileProvider
 ADDED from [com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:12:9-21:20
 	android:grantUriPermissions
