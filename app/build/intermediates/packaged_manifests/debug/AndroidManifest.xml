@@ -39,7 +39,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="Rating.InformationActivity"
+            android:exported="false" />
 
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity
+            android:name="Rating.ViewRatingActivity"
+            android:exported="false" />
+        <activity
+            android:name="Rating.RatingActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

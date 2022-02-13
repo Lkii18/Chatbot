@@ -1692,6 +1692,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1719,6 +1720,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1815,6 +1817,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
+id address_txt2
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1849,6 +1853,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_action
+id cardView
 id carryVelocity
 id center
 id center_horizontal
@@ -1864,6 +1869,8 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id comment
+id comment_txt2
 id constraint
 id container
 id content
@@ -1938,6 +1945,7 @@ id hybrid
 id icon
 id icon_group
 id icon_only
+id id_txt
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1965,6 +1973,7 @@ id line3
 id linear
 id listMode
 id list_item
+id mainLayout
 id map
 id masked
 id match_constraint
@@ -1977,6 +1986,9 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
+id name_txt
+id name_txt2
 id navigation_header_container
 id never
 id neverCompleteToEnd
@@ -2026,8 +2038,13 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id rating_bar
+id rating_submit
+id rating_txt
+id rating_txt2
 id ratio
 id rectangles
+id recyclerView
 id recycler_view
 id refresh
 id reverseSawtooth
@@ -2073,6 +2090,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner1
 id spline
 id split_action_bar
 id spread
@@ -2134,6 +2152,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id type_txt
+id type_txt2
 id unchecked
 id uniform
 id unlabeled
@@ -2211,7 +2231,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_google_maps
+layout activity_information
 layout activity_main
+layout activity_rating
+layout activity_rating_row
+layout activity_view_rating
 layout chat_item_self
 layout chat_item_watson
 layout content_chat_room
@@ -2977,4 +3001,5 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml actions
 xml provider_paths

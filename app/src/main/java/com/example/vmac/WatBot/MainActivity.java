@@ -55,6 +55,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import GoogleMap.GoogleMapsActivity;
+import Rating.RatingActivity;
+import Rating.ViewRatingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -173,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
         createServices();
         sendMessage();
-    };
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
