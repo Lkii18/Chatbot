@@ -480,6 +480,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case "Find an attraction":
                     dialogCombination[0] = "FindingAttractions";
+                    break;
                 case "Find nearby restaurants":
                     dialogCombination[0] = "FindingRestaurants";
                     dialogCombination[1] = "n/a";
@@ -513,6 +514,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean isdialogcompleted(){
         for(int i=0;i<dialogCombination.length;i++)
         {
+            System.out.println("Dialog"+i+":"+ dialogCombination[i]);
+
             if (dialogCombination[i]==null||dialogCombination[i].equals(""))
             {
                 System.out.println("The dialog is not completed");

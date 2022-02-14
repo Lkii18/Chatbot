@@ -6,102 +6,102 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\Chatbot2\app\src\main\AndroidManifest.xml
+8-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->D:\Chatbot2\app\src\main\AndroidManifest.xml
+9-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Chatbot2\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\Chatbot2\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->D:\Chatbot2\app\src\main\AndroidManifest.xml:6:5-81
-12-->D:\Chatbot2\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->D:\Chatbot2\app\src\main\AndroidManifest.xml:7:5-76
-13-->D:\Chatbot2\app\src\main\AndroidManifest.xml:7:22-73
+13-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:5-76
+13-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:7:22-73
 14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-14-->D:\Chatbot2\app\src\main\AndroidManifest.xml:8:5-76
-14-->D:\Chatbot2\app\src\main\AndroidManifest.xml:8:22-73
+14-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:8:22-73
 15    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-15-->D:\Chatbot2\app\src\main\AndroidManifest.xml:9:5-79
-15-->D:\Chatbot2\app\src\main\AndroidManifest.xml:9:22-76
+15-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:9:22-76
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->D:\Chatbot2\app\src\main\AndroidManifest.xml:10:5-79
-16-->D:\Chatbot2\app\src\main\AndroidManifest.xml:10:22-76
+16-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->D:\Chatbot2\app\src\main\AndroidManifest.xml:11:5-71
-17-->D:\Chatbot2\app\src\main\AndroidManifest.xml:11:22-68
+17-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:5-71
+17-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:11:22-68
 18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-18-->D:\Chatbot2\app\src\main\AndroidManifest.xml:12:5-79
-18-->D:\Chatbot2\app\src\main\AndroidManifest.xml:12:22-76
+18-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:5-79
+18-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:12:22-76
 19    <uses-permission android:name="com.google.android.providers.gsf.permission.Read_GSERVICES" />
-19-->D:\Chatbot2\app\src\main\AndroidManifest.xml:13:5-98
-19-->D:\Chatbot2\app\src\main\AndroidManifest.xml:13:22-95
+19-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:5-98
+19-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:13:22-95
 20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-20-->D:\Chatbot2\app\src\main\AndroidManifest.xml:14:5-81
-20-->D:\Chatbot2\app\src\main\AndroidManifest.xml:14:22-78
+20-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:5-81
+20-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:14:22-78
 21    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-21-->D:\Chatbot2\app\src\main\AndroidManifest.xml:15:5-85
-21-->D:\Chatbot2\app\src\main\AndroidManifest.xml:15:22-82
+21-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:5-85
+21-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:15:22-82
 22
 23    <uses-feature
-23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
 24        android:glEsVersion="0x00020000"
-24-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+24-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
 25        android:required="true" />
-25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
 26
 27    <queries>
-27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
 28
 29        <!-- Needs to be explicitly declared on Android R+ -->
 30        <package android:name="com.google.android.apps.maps" />
-30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
 31    </queries>
 32
 33    <application
-33-->D:\Chatbot2\app\src\main\AndroidManifest.xml:17:5-69:19
+33-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:17:5-69:19
 34        android:allowBackup="true"
-34-->D:\Chatbot2\app\src\main\AndroidManifest.xml:18:9-35
+34-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:18:9-35
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-35-->[androidx.core:core:1.7.0] C:\Users\Lkii\.gradle\caches\transforms-3\b2350dd42fec0af8521f83d59b492efe\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+35-->[androidx.core:core:1.7.0] C:\Users\tw215\.gradle\caches\transforms-3\b2350dd42fec0af8521f83d59b492efe\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 36        android:debuggable="true"
 37        android:icon="@mipmap/icon"
-37-->D:\Chatbot2\app\src\main\AndroidManifest.xml:19:9-36
+37-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:19:9-36
 38        android:label="@string/app_name"
-38-->D:\Chatbot2\app\src\main\AndroidManifest.xml:20:9-41
+38-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:20:9-41
 39        android:supportsRtl="true"
-39-->D:\Chatbot2\app\src\main\AndroidManifest.xml:21:9-35
+39-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:21:9-35
 40        android:testOnly="true"
 41        android:theme="@style/AppTheme" >
-41-->D:\Chatbot2\app\src\main\AndroidManifest.xml:22:9-40
+41-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:22:9-40
 42        <activity
-42-->D:\Chatbot2\app\src\main\AndroidManifest.xml:23:9-25:40
+42-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:23:9-25:40
 43            android:name="Rating.InformationActivity"
-43-->D:\Chatbot2\app\src\main\AndroidManifest.xml:24:13-54
+43-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:24:13-54
 44            android:exported="false" />
-44-->D:\Chatbot2\app\src\main\AndroidManifest.xml:25:13-37
+44-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:25:13-37
 45
 46        <meta-data
-46-->D:\Chatbot2\app\src\main\AndroidManifest.xml:27:9-29:47
+46-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:27:9-29:47
 47            android:name="com.google.android.actions"
-47-->D:\Chatbot2\app\src\main\AndroidManifest.xml:28:13-54
+47-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:28:13-54
 48            android:resource="@xml/actions" />
-48-->D:\Chatbot2\app\src\main\AndroidManifest.xml:29:13-44
+48-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:29:13-44
 49
 50        <activity
-50-->D:\Chatbot2\app\src\main\AndroidManifest.xml:31:9-33:40
+50-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:31:9-33:40
 51            android:name="Rating.ViewRatingActivity"
-51-->D:\Chatbot2\app\src\main\AndroidManifest.xml:32:13-53
+51-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:32:13-53
 52            android:exported="false" />
-52-->D:\Chatbot2\app\src\main\AndroidManifest.xml:33:13-37
+52-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:33:13-37
 53        <activity
-53-->D:\Chatbot2\app\src\main\AndroidManifest.xml:34:9-36:40
+53-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:34:9-36:40
 54            android:name="Rating.RatingActivity"
-54-->D:\Chatbot2\app\src\main\AndroidManifest.xml:35:13-49
+54-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:35:13-49
 55            android:exported="false" />
-55-->D:\Chatbot2\app\src\main\AndroidManifest.xml:36:13-37
+55-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:36:13-37
 56        <!--
 57             TODO: Before you run your application, you need a Google Maps API key.
 58
@@ -115,150 +115,150 @@
 66        -->
 67        <meta-data
 68            android:name="com.google.android.geo.API_KEY"
-68-->D:\Chatbot2\app\src\main\AndroidManifest.xml:49:13-58
+68-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:49:13-58
 69            android:value="AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0" />
-69-->D:\Chatbot2\app\src\main\AndroidManifest.xml:50:13-44
+69-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:50:13-44
 70
 71        <activity
-71-->D:\Chatbot2\app\src\main\AndroidManifest.xml:52:9-54:52
+71-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:52:9-54:52
 72            android:name="com.example.vmac.WatBot.MainActivity"
-72-->D:\Chatbot2\app\src\main\AndroidManifest.xml:53:13-41
+72-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:53:13-41
 73            android:screenOrientation="portrait" />
-73-->D:\Chatbot2\app\src\main\AndroidManifest.xml:54:13-49
+73-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:54:13-49
 74        <activity
-74-->D:\Chatbot2\app\src\main\AndroidManifest.xml:55:9-65:20
+74-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:55:9-65:20
 75            android:name="com.example.vmac.WatBot.SplashActivity"
-75-->D:\Chatbot2\app\src\main\AndroidManifest.xml:56:13-43
+75-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:56:13-43
 76            android:exported="true"
-76-->D:\Chatbot2\app\src\main\AndroidManifest.xml:57:13-36
+76-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:57:13-36
 77            android:screenOrientation="portrait"
-77-->D:\Chatbot2\app\src\main\AndroidManifest.xml:58:13-49
+77-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:58:13-49
 78            android:theme="@style/SplashTheme" >
-78-->D:\Chatbot2\app\src\main\AndroidManifest.xml:59:13-47
+78-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:59:13-47
 79            <intent-filter>
-79-->D:\Chatbot2\app\src\main\AndroidManifest.xml:60:13-64:29
+79-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:60:13-64:29
 80                <action android:name="android.intent.action.MAIN" />
-80-->D:\Chatbot2\app\src\main\AndroidManifest.xml:61:17-69
-80-->D:\Chatbot2\app\src\main\AndroidManifest.xml:61:25-66
+80-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:61:17-69
+80-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:61:25-66
 81
 82                <category android:name="android.intent.category.LAUNCHER" />
-82-->D:\Chatbot2\app\src\main\AndroidManifest.xml:63:17-77
-82-->D:\Chatbot2\app\src\main\AndroidManifest.xml:63:27-74
+82-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:63:17-77
+82-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:63:27-74
 83            </intent-filter>
 84        </activity>
 85        <activity
-85-->D:\Chatbot2\app\src\main\AndroidManifest.xml:66:9-68:52
+85-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:66:9-68:52
 86            android:name="GoogleMap.GoogleMapsActivity"
-86-->D:\Chatbot2\app\src\main\AndroidManifest.xml:67:13-56
+86-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:67:13-56
 87            android:screenOrientation="portrait" />
-87-->D:\Chatbot2\app\src\main\AndroidManifest.xml:68:13-49
+87-->C:\Users\tw215\AndroidStudioProjects\ChatbotTest\app\src\main\AndroidManifest.xml:68:13-49
 88
 89        <provider
-89-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:12:9-21:20
+89-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:12:9-21:20
 90            android:name="androidx.core.content.FileProvider"
-90-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:13:13-62
+90-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:13:13-62
 91            android:authorities="com.ibm.watson.developer_cloud.android.provider"
-91-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:14:13-82
+91-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:14:13-82
 92            android:exported="false"
-92-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:15:13-37
+92-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:15:13-37
 93            android:grantUriPermissions="true" >
-93-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:16:13-47
+93-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:16:13-47
 94            <meta-data
-94-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:17:13-20:25
+94-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:17:13-20:25
 95                android:name="android.support.FILE_PROVIDER_PATHS"
-95-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:18:17-67
+95-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:18:17-67
 96                android:resource="@xml/provider_paths" >
-96-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\96df0ddba912633d1f997921d142f847\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:19:17-55
+96-->[com.ibm.watson.developer_cloud:android-sdk:0.5.0] C:\Users\tw215\.gradle\caches\transforms-3\09dddb165b7da8bfcf4e72bdd92ed4da\transformed\jetified-android-sdk-0.5.0\AndroidManifest.xml:19:17-55
 97            </meta-data>
 98        </provider>
 99
 100        <activity
-100-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:14:9-20:20
+100-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:14:9-20:20
 101            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-101-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:15:13-91
+101-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:15:13-91
 102            android:exported="false"
-102-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:16:13-37
+102-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:16:13-37
 103            android:label="@string/places_autocomplete_label"
-103-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:17:13-62
+103-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:17:13-62
 104            android:theme="@style/PlacesAutocompleteOverlay"
-104-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:18:13-61
+104-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:18:13-61
 105            android:windowSoftInputMode="adjustResize" >
-105-->[com.google.android.libraries.places:places:2.5.0] C:\Users\Lkii\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:19:13-55
+105-->[com.google.android.libraries.places:places:2.5.0] C:\Users\tw215\.gradle\caches\transforms-3\d6425a77e9313dcc62898d782048cf89\transformed\jetified-places-2.5.0\AndroidManifest.xml:19:13-55
 106        </activity> <!-- Needs to be explicitly declared on P+ -->
 107        <uses-library
-107-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+107-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
 108            android:name="org.apache.http.legacy"
-108-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+108-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
 109            android:required="false" />
-109-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Lkii\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+109-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\tw215\.gradle\caches\transforms-3\3f76a710ddedc3092475dca222f2e001\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
 110
 111        <activity
-111-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lkii\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+111-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tw215\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-112-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lkii\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+112-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tw215\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 113            android:exported="false"
-113-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lkii\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+113-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tw215\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-114-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lkii\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+114-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tw215\.gradle\caches\transforms-3\3e1c40b520e37f6499ca4dcd81bb365a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 115
 116        <meta-data
-116-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+116-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tw215\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 117            android:name="com.google.android.gms.version"
-117-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+117-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tw215\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 118            android:value="@integer/google_play_services_version" />
-118-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+118-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tw215\.gradle\caches\transforms-3\70d8fc0940adfb7ccaaf77b2dafa70a6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 119
 120        <provider
-120-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+120-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 121            android:name="androidx.startup.InitializationProvider"
-121-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+121-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 122            android:authorities="com.example.vmac.chatbot.androidx-startup"
-122-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+122-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 123            android:exported="false" >
-123-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+123-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 124            <meta-data
-124-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+124-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-125-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+125-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 126                android:value="androidx.startup" />
-126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Lkii\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\tw215\.gradle\caches\transforms-3\53dc6041cf63c4e94ef3b6d0d81c2634\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 127            <meta-data
-127-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Lkii\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+127-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tw215\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-128-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Lkii\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+128-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tw215\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 129                android:value="androidx.startup" />
-129-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Lkii\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+129-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\tw215\.gradle\caches\transforms-3\e5d09e6491157caed19a070eb668f419\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 130        </provider>
 131
 132        <service
-132-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+132-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
 133            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-133-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+133-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
 134            android:exported="false" >
-134-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+134-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
 135            <meta-data
-135-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+135-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
 136                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-136-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+136-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
 137                android:value="cct" />
-137-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Lkii\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+137-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\tw215\.gradle\caches\transforms-3\f6db8efc2805fa6cd0a77de9646fd35a\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
 138        </service>
 139        <service
-139-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+139-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
 140            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-140-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+140-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
 141            android:exported="false"
-141-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+141-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
 142            android:permission="android.permission.BIND_JOB_SERVICE" >
-142-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+142-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
 143        </service>
 144
 145        <receiver
-145-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+145-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
 146            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-146-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+146-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
 147            android:exported="false" />
-147-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Lkii\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+147-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\tw215\.gradle\caches\transforms-3\17e75d9dcf8b4c4d35ce41e4de3ebfa6\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
 148    </application>
 149
 150</manifest>
