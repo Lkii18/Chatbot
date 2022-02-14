@@ -48,14 +48,22 @@
                 android:text="Type"
                 app:layout_constraintStart_toStartOf="@+id/name_txt"
                 app:layout_constraintTop_toBottomOf="@+id/name_txt" />
-            <TextView
-                android:id="@+id/rating_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="rating"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@android:attr/ratingBarStyleSmall"
+                android:layout_width="232dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="10dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                app:layout_constraintStart_toEndOf="@+id/id_txt"
+                app:layout_constraintTop_toTopOf="@+id/id_txt" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

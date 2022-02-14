@@ -1850,6 +1850,7 @@ id bounceStart
 id btn_record
 id btn_send
 id buttonPanel
+id c
 id cache_measures
 id callMeasure
 id cancel_action
@@ -2038,9 +2039,10 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
+id ratingBar2
 id rating_bar
 id rating_submit
-id rating_txt
 id rating_txt2
 id ratio
 id rectangles

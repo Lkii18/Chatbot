@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "D:\\Chatbot2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "source": "D:\\Chatbot2\\app\\src\\main\\res\\values-w820dp\\strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

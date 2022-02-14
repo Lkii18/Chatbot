@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -52,8 +53,8 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHold
 
         holder.id_txt.setText(String.valueOf(id.get(position)));
         holder.name_txt.setText(String.valueOf(name.get(position)));
-        holder.rating_txt.setText(String.valueOf(rating.get(position)));
         holder.type_txt.setText(String.valueOf(type.get(position)));
+        holder.ratingBar.setRating(Integer.parseInt(rating.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,14 +76,16 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHold
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView id_txt, name_txt, rating_txt, type_txt;
+        RatingBar ratingBar;
         LinearLayout mainLayout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             id_txt = itemView.findViewById(R.id.id_txt);
             name_txt = itemView.findViewById(R.id.name_txt);
-            rating_txt = itemView.findViewById(R.id.rating_txt);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
             type_txt = itemView.findViewById(R.id.type_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
+
 
         }
     }

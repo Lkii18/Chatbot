@@ -19,9 +19,13 @@ public class Database extends SQLiteOpenHelper {
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_NAME = "name";
     private static final String COLUMN_RATING = "rating";
-    private static final String COLUMN_COMMENT = "comment";
     private static final String COLUMN_TYPE = "type";
     private static final String COLUMN_ADDRESS = "address";
+    private static final String COLUMN_COMMENT_ID1 = "rating_id";
+
+    private static final String TABLE_NAME2 = "comment";
+    private static final String COLUMN_COMMENT_ID2 = "rating_id";
+    private static final String COLUMN_COMMENT = "comment";
 
     public Database(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -34,10 +38,16 @@ public class Database extends SQLiteOpenHelper {
                 " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " TEXT, " +
                 COLUMN_RATING + " FLOAT, " +
-                COLUMN_COMMENT + " TEXT, " +
+                COLUMN_COMMENT_ID1 + " TEXT, " +
                 COLUMN_TYPE + " TEXT, " +
                 COLUMN_ADDRESS + " TEXT);";
         db.execSQL(query);
+
+        String query2 = "CREATE TABLE " + TABLE_NAME2 +
+                " (" + COLUMN_COMMENT_ID2 + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_COMMENT + " TEXT);";
+
+        db.execSQL(query2);
 
     }
 

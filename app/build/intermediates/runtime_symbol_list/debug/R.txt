@@ -1849,6 +1849,7 @@ int id bounceStart 0x7f080061
 int id btn_record 0x7f080062
 int id btn_send 0x7f080063
 int id buttonPanel 0x7f080064
+int id c 0x7f0801aa
 int id cache_measures 0x7f080065
 int id callMeasure 0x7f080066
 int id cancel_action 0x7f080067
@@ -2037,10 +2038,11 @@ int id postLayout 0x7f08011d
 int id progress_circular 0x7f08011e
 int id progress_horizontal 0x7f08011f
 int id radio 0x7f080120
-int id rating_bar 0x7f080121
-int id rating_submit 0x7f080122
-int id rating_txt 0x7f080123
-int id rating_txt2 0x7f080124
+int id ratingBar 0x7f080121
+int id ratingBar2 0x7f080122
+int id rating_bar 0x7f080123
+int id rating_submit 0x7f080124
+int id rating_txt2 0x7f0801ab
 int id ratio 0x7f080125
 int id rectangles 0x7f080126
 int id recyclerView 0x7f080127
