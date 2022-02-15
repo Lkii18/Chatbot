@@ -177,7 +177,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 }
                 else {
                     System.out.println("Test 2 is:"+dialogCombination[1]);
-                    zoomToSpecificLocation("restaurant");}
+                    zoomToSpecificLocation("attraction");}
                 break;
             case "FindingAttractions":
                 if(dialogCombination[1].equals("n/a"))
@@ -230,17 +230,20 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             e.printStackTrace();
         }
 
-        if(type == "restaurant")
+        if(type.equals ("restaurant")) {
             url = getUrl(latitude, longitude, "restaurant");
+            Toast.makeText(this, "Searching for the Restaurants in specific location", Toast.LENGTH_SHORT).show();
+        }
         else{
             url = getUrl(latitude, longitude, "tourist_attraction");
+            Toast.makeText(this, "Searching for the attractions in specific location", Toast.LENGTH_SHORT).show();
         }
         transferData[0] = mMap;
         transferData[1] = url;
 
         getNearbyPlaces.execute(transferData);
 
-        Toast.makeText(this, "Searching for the Restaurants in specific location", Toast.LENGTH_SHORT).show();
+
     }
 
     private String readCoordinates(){

@@ -504,6 +504,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean isDialogCompleted(){
         for(int i=0;i<dialogCombination.length;i++)
         {
+            System.out.println("Dialog"+i+":"+ dialogCombination[i]);
+
             if (dialogCombination[i]==null||dialogCombination[i].equals(""))
             {
                 System.out.println("The dialog is not completed");
