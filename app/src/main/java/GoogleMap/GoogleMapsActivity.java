@@ -221,7 +221,6 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             for(int i=0; i<jsonArray.length();i++) {
                 if (jsonArray.getJSONObject(i).getString("name").equals(dialogCombination[1]))
                 {
-                    System.out.println("JsonReader is running!");
                     latitude =Double.parseDouble(jsonArray.getJSONObject(i).getString("latitude"));
                     longitude=Double.parseDouble(jsonArray.getJSONObject(i).getString("longitude"));
                     break;

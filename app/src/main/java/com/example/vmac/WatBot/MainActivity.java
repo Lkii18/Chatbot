@@ -7,27 +7,23 @@ import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.*;
 
-import android.os.Handler;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.ibm.cloud.sdk.core.http.HttpMediaType;
 import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.http.ServiceCall;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
@@ -48,14 +44,12 @@ import com.ibm.watson.speech_to_text.v1.model.RecognizeOptions;
 import com.ibm.watson.speech_to_text.v1.model.SpeechRecognitionResults;
 import com.ibm.watson.speech_to_text.v1.websocket.BaseRecognizeCallback;
 import com.ibm.watson.text_to_speech.v1.TextToSpeech;
-import com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions;
 
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import GoogleMap.GoogleMapsActivity;
-import Rating.RatingActivity;
 import Rating.ViewRatingActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -250,7 +244,6 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Tap on the message for Voice", Toast.LENGTH_LONG).show();
 
                         }
-                        ActionAfterResponse(inputMessage.getText().toString().trim());
                         this.inputMessage.setText("");
                         mAdapter.notifyDataSetChanged();
 
@@ -277,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
                                             !response.getResult().getOutput().getGeneric().isEmpty()) {
 
                                         List<RuntimeResponseGeneric> responses = response.getResult().getOutput().getGeneric();
-
+                                        ActionAfterResponse(getChatBotResponse(response.getResult()));
                                         for (RuntimeResponseGeneric r : responses) {
                                             Message outMessage;
                                             switch (r.responseType()) {
@@ -471,46 +464,44 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void ActionAfterResponse(String message){
+    private void ActionAfterResponse(String chatBotMessage){
 
 
-            switch (message) {
+            switch (chatBotMessage) {
                 case "Find a restaurant":
                     dialogCombination[0] = "FindingRestaurants";
                     break;
                 case "Find an attraction":
                     dialogCombination[0] = "FindingAttractions";
+                    break;
                 case "Find nearby restaurants":
                     dialogCombination[0] = "FindingRestaurants";
                     dialogCombination[1] = "n/a";
                     break;
-                case "Find nearby attractions":
+                case "Understood, I am searching the nearby restaurant ...":
                     dialogCombination[0] = "FindingAttractions";
                     dialogCombination[1] = "n/a";
                     break;
                 case "Rating":
-                    Intent Rating = new Intent(MainActivity.this, RatingActivity.class);
+                    Intent Rating = new Intent(MainActivity.this, ViewRatingActivity.class);
                     startActivity(Rating);
                     break;
-                case "View Rating":
-                    Intent ViewRating = new Intent(MainActivity.this, ViewRatingActivity.class);
-                    startActivity(ViewRating);
-                    break;
+
                 default:
                     for(int i=0;i<hkRegion.length;i++)
                     {
-                        if (message.equals(hkRegion[i]))
+                        if (chatBotMessage.equals(hkRegion[i]))
                         {
-                            dialogCombination[1] = message;
+                            dialogCombination[1] = chatBotMessage;
                             break;
                         }
                     }
                     break;
             }
-            if(isdialogcompleted())
+            if(isDialogCompleted())
                 moveToMap(dialogCombination);
     }
-    private boolean isdialogcompleted(){
+    private boolean isDialogCompleted(){
         for(int i=0;i<dialogCombination.length;i++)
         {
             if (dialogCombination[i]==null||dialogCombination[i].equals(""))
@@ -531,6 +522,15 @@ public class MainActivity extends AppCompatActivity {
         {
             dialogCombination[i]="";
         }
+    }
+    private String getChatBotResponse(MessageResponse response)
+    {
+        String returnMessage = response.getOutput().getGeneric().get(0).title();
+        if(returnMessage==null)
+            returnMessage=response.getOutput().getGeneric().get(0).text();
+        Log.i(TAG, "run: "+ returnMessage);
+
+        return returnMessage;
     }
     private void requestPermissions() {
         ActivityCompat.requestPermissions(this, new String[]{

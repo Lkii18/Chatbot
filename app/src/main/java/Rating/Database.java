@@ -15,14 +15,20 @@ public class Database extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Chatbot.db";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String TABLE_NAME = "rating";
+    private static final String TABLE_NAME = "place";
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_NAME = "name";
     private static final String COLUMN_RATING = "rating";
-    private static final String COLUMN_COMMENT = "comment";
     private static final String COLUMN_TYPE = "type";
     private static final String COLUMN_ADDRESS = "address";
+    private static final String COLUMN_COMMENT_ID1 = "rating_id";
 
+    private static final String TABLE_NAME2 = "comment";
+    private static final String COLUMN_ID2 = "id";
+    private static final String COLUMN_COMMENT2 = "comment";
+    private static final String COLUMN_NAME2 = "name";
+    private static final String COLUMN_RATING2 = "rating";
+    private static final String COLUMN_USERNAME = "username";
     public Database(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
@@ -34,10 +40,18 @@ public class Database extends SQLiteOpenHelper {
                 " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " TEXT, " +
                 COLUMN_RATING + " FLOAT, " +
-                COLUMN_COMMENT + " TEXT, " +
+                COLUMN_COMMENT_ID1 + " TEXT, " +
                 COLUMN_TYPE + " TEXT, " +
                 COLUMN_ADDRESS + " TEXT);";
         db.execSQL(query);
+
+        String query2 = "CREATE TABLE " + TABLE_NAME2 +
+                " (" + COLUMN_ID2 + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_NAME2 + " TEXT, " +
+                COLUMN_RATING2 + " FLOAT, " +
+                COLUMN_COMMENT2 + " TEXT);";
+
+        db.execSQL(query2);
 
     }
 
@@ -47,18 +61,16 @@ public class Database extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void rating(String name, String comment, String type, float rating, String address) {
+    void rating(String name,float rating,String comment) {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
+        cv.put(COLUMN_USERNAME, name);
+        cv.put(COLUMN_RATING2, rating);
+        cv.put(COLUMN_COMMENT2, comment);
 
-        cv.put(COLUMN_NAME, name);
-        cv.put(COLUMN_RATING, rating);
-        cv.put(COLUMN_COMMENT, comment);
-        cv.put(COLUMN_TYPE, type);
-        cv.put(COLUMN_ADDRESS, address);
-        long result = db.insert(TABLE_NAME, null, cv);
+        long result = db.insert(TABLE_NAME2, null, cv);
 
         if (result == -1) {
             Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show();
@@ -75,4 +87,15 @@ public class Database extends SQLiteOpenHelper {
         }
         return cursor;
     }
+    Cursor readComment(String name){
+        String query = "SELECT * FROM " + TABLE_NAME2 +" WHERE "+ COLUMN_NAME2 + " ='" +name +"'";
+        System.out.println("query" + query);
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = null;
+        if(db !=null){
+            cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+    }
+
 }

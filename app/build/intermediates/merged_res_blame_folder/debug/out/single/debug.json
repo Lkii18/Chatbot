@@ -4,12 +4,16 @@
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-xhdpi\\ic_mic.png"
     },
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_mic.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_mic.png"
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment_row.xml.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\layout\\activity_comment_row.xml"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_information.xml.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\layout\\activity_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_mic.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_mic.png"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_mic.png.flat",
@@ -36,12 +40,12 @@
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-hdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_send.png.flat",
-        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_send.png"
-    },
-    {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background.xml.flat",
         "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_send.png.flat",
+        "source": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_send.png"
     },
     {
         "merged": "C:\\Users\\tw215\\AndroidStudioProjects\\ChatbotTest\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_google_maps.xml.flat",

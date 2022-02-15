@@ -1817,7 +1817,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id address
+id add_button
 id address_txt2
 id adjust_height
 id adjust_width
@@ -1850,6 +1850,10 @@ id bounceStart
 id btn_record
 id btn_send
 id buttonPanel
+id c
+id c_comment
+id c_name
+id c_ratingBar
 id cache_measures
 id callMeasure
 id cancel_action
@@ -1870,6 +1874,7 @@ id clockwise
 id closest
 id collapseActionView
 id comment
+id comment_Layout
 id comment_txt2
 id constraint
 id container
@@ -2006,6 +2011,7 @@ id onInterceptTouchReturnSwipe
 id outline
 id overshoot
 id packed
+id pages_input
 id parallax
 id parent
 id parentPanel
@@ -2038,9 +2044,10 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
+id ratingBar2
 id rating_bar
 id rating_submit
-id rating_txt
 id rating_txt2
 id ratio
 id rectangles
@@ -2090,7 +2097,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinner1
 id spline
 id split_action_bar
 id spread
@@ -2159,6 +2165,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_name2
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -2230,6 +2237,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_comment_row
 layout activity_google_maps
 layout activity_information
 layout activity_main

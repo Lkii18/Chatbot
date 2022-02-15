@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="Rating.InformationActivity"
-
-
-    >
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
 
     <TextView
         android:id="@+id/name_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:text="Name"
         android:textColor="#000"
         android:textSize="20sp"
@@ -27,34 +25,74 @@
         android:id="@+id/type_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
         android:text="Type"
         app:layout_constraintStart_toStartOf="@+id/name_txt2"
         app:layout_constraintTop_toBottomOf="@+id/name_txt2" />
 
     <TextView
-        android:id="@+id/comment_txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comment"
-        app:layout_constraintStart_toStartOf="@+id/type_txt2"
-        app:layout_constraintTop_toBottomOf="@+id/type_txt2" />
-
-    <TextView
-        android:id="@+id/rating_txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="rating"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/comment_txt2"
-        app:layout_constraintTop_toBottomOf="@+id/comment_txt2"/>
-
-    <TextView
         android:id="@+id/address_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:text="address"
+        android:layout_marginTop="5dp"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/rating_txt2"
         app:layout_constraintTop_toBottomOf="@+id/rating_txt2"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="270dp"
+        android:isIndicator="true"
+        android:max="5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment : "
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/rating_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/rating_txt2"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comment_txt2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="409dp"
+                android:layout_height="500dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Add"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pages_input"
+        app:srcCompat="@drawable/ic_add"
+        />
+</LinearLayout>
