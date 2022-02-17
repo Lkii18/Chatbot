@@ -16,8 +16,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -76,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
   private Response<SessionResponse> watsonAssistantSession;
   private SpeechToText speechService;
   private TextToSpeech textToSpeech;
+  public LinearLayout linearLayout;
+
 
   //All possibilites of dialog combination.
   String[] dialogCombination= {null,null};
@@ -110,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
     Typeface typeface = Typeface.createFromAsset(getAssets(), customFont);
     inputMessage.setTypeface(typeface);
     recyclerView = findViewById(R.id.recycler_view);
-
     messageArrayList = new ArrayList<>();
     mAdapter = new ChatAdapter(messageArrayList);
     microphoneHelper = new MicrophoneHelper(this);
@@ -122,8 +126,6 @@ public class MainActivity extends AppCompatActivity {
     recyclerView.setAdapter(mAdapter);
     this.inputMessage.setText("");
     this.initialRequest = true;
-
-
     int permission = ContextCompat.checkSelfPermission(this,
       Manifest.permission.RECORD_AUDIO);
 
@@ -459,7 +461,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onDisconnected() {
-            //nableMicButton();
+            //enableMicButton();
         }
 
     }
@@ -468,21 +470,21 @@ public class MainActivity extends AppCompatActivity {
 
 
             switch (chatBotMessage) {
-                case "Find a restaurant":
+                case "I see, where do you prefer to have a meal?":
                     dialogCombination[0] = "FindingRestaurants";
                     break;
-                case "Find an attraction":
-                    dialogCombination[0] = "FindingAttractions";
-                    break;
-                case "Find nearby restaurants":
-                    dialogCombination[0] = "FindingRestaurants";
-                    dialogCombination[1] = "n/a";
+                case "I see, where do you want to go?":
+                    dialogCombination[0] = "No problems, what region do you want to go today?";
                     break;
                 case "Understood, I am searching the nearby restaurant ...":
+                    dialogCombination[0] = "FindingRestaurants";
+                    dialogCombination[1] = "n/a";
+                    break;
+                case "Understood, I am searching nearby attractions...":
                     dialogCombination[0] = "FindingAttractions";
                     dialogCombination[1] = "n/a";
                     break;
-                case "Rating":
+                case "Checking rating... ":
                     Intent Rating = new Intent(MainActivity.this, ViewRatingActivity.class);
                     startActivity(Rating);
                     break;
@@ -490,22 +492,22 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     for(int i=0;i<hkRegion.length;i++)
                     {
-                        if (chatBotMessage.equals(hkRegion[i]))
+                        if (getUserTargetedRegion(chatBotMessage).equals(hkRegion[i]))
                         {
-                            dialogCombination[1] = chatBotMessage;
+                            dialogCombination[1] = hkRegion[i];
                             break;
                         }
                     }
                     break;
             }
+        System.out.println("Dialog 0:"+ dialogCombination[0]);
+        System.out.println("Dialog 1:"+ dialogCombination[1]);
             if(isDialogCompleted())
                 moveToMap(dialogCombination);
     }
     private boolean isDialogCompleted(){
         for(int i=0;i<dialogCombination.length;i++)
         {
-            System.out.println("Dialog"+i+":"+ dialogCombination[i]);
-
             if (dialogCombination[i]==null||dialogCombination[i].equals(""))
             {
                 System.out.println("The dialog is not completed");
@@ -530,7 +532,6 @@ public class MainActivity extends AppCompatActivity {
         String returnMessage = response.getOutput().getGeneric().get(0).title();
         if(returnMessage==null)
             returnMessage=response.getOutput().getGeneric().get(0).text();
-        Log.i(TAG, "run: "+ returnMessage);
 
         return returnMessage;
     }
@@ -538,6 +539,11 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, new String[]{
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+    }
+    private String getUserTargetedRegion(String dialog){
+
+        int position= dialog.indexOf(":");
+        return dialog.substring(position+2,dialog.length()-1);
     }
 }
 
