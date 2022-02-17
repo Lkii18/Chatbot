@@ -53,6 +53,7 @@ public class InformationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(InformationActivity.this, RatingActivity.class);
+                intent.putExtra("name",name.getText().toString());
                 startActivity(intent);
             }
         });

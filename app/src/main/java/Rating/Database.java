@@ -61,12 +61,13 @@ public class Database extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void rating(String name,float rating,String comment) {
+    void rating(String name,String username,float rating,String comment) {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(COLUMN_USERNAME, name);
+        cv.put(COLUMN_NAME2, name);
+        cv.put(COLUMN_USERNAME, username);
         cv.put(COLUMN_RATING2, rating);
         cv.put(COLUMN_COMMENT2, comment);
 

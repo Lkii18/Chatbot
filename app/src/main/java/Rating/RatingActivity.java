@@ -2,6 +2,7 @@ package Rating;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Rating;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,9 @@ public class RatingActivity extends AppCompatActivity implements AdapterView.OnI
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Your rating is " + ratingBar.getRating() , Toast.LENGTH_SHORT).show();
-                myDB.rating(etname.getText().toString().trim(),ratingBar.getRating(),etcomment.getText().toString().trim());
+                Intent intent = getIntent();
+                System.out.println("name" + intent.getStringExtra("name"));
+                myDB.rating(intent.getStringExtra("name"),etname.getText().toString().trim(),ratingBar.getRating(),etcomment.getText().toString().trim());
 
             }
         });
