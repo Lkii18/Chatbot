@@ -177,7 +177,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 }
                 else {
                     System.out.println("Test 2 is:"+dialogCombination[1]);
-                    zoomToSpecificLocation("attraction");}
+                    zoomToSpecificLocation("restaurant");}
                 break;
             case "FindingAttractions":
                 if(dialogCombination[1].equals("n/a"))
@@ -195,17 +195,20 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
         mMap.clear();
-        if(type == "restaurant")
+        if(type == "restaurant") {
             url = getUrl(latitude, longitude, "restaurant");
+            Toast.makeText(this, "Searching for Nearby Restaurants...", Toast.LENGTH_SHORT).show();
+        }
         else{
             url = getUrl(latitude, longitude, "tourist_attraction");
+            Toast.makeText(this, "Searching for Nearby attractions...", Toast.LENGTH_SHORT).show();
         }
         transferData[0] = mMap;
         transferData[1] = url;
 
         getNearbyPlaces.execute(transferData);
 
-        Toast.makeText(this, "Searching for Nearby Restaurants...", Toast.LENGTH_SHORT).show();
+
     }
 
     //IF user want to know the restaurant or attractions in a specific region:
@@ -234,7 +237,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             url = getUrl(latitude, longitude, "restaurant");
             Toast.makeText(this, "Searching for the Restaurants in specific location", Toast.LENGTH_SHORT).show();
         }
-        else{
+        if(type.equals ("attraction")) {
             url = getUrl(latitude, longitude, "tourist_attraction");
             Toast.makeText(this, "Searching for the attractions in specific location", Toast.LENGTH_SHORT).show();
         }

@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
   //All possibilites of dialog combination.
   String[] dialogCombination= {null,null};
   //All HK region, used for searching inputted message.
-  public static String[] hkRegion= {"Tsuen Wan","ShaTin","Central and Western","Eastern District","Islands District","Kowloon City","Kwai Tsing","Kwun Tong","North District","Saigon","Sham Shui Po","Southern District","Tai Po","Tuen Mun","Wan Chai","Wong Tai Sin","Yau Tsim Mong","Yuen Long"};
+  public static String[] hkRegion= {"Tsuen Wan","ShaTin","Central and Western District","Eastern District","Islands District","Kowloon City","Kwai Tsing","Kwun Tong","North District","Sai Kung","Sham Shui Po","Southern District","Tai Po","Tuen Mun","Wan Chai","Wong Tai Sin","Yau Tsim Mong","Yuen Long"};
 
 
   private void createServices() {
@@ -474,7 +474,7 @@ public class MainActivity extends AppCompatActivity {
                     dialogCombination[0] = "FindingRestaurants";
                     break;
                 case "I see, where do you want to go?":
-                    dialogCombination[0] = "No problems, what region do you want to go today?";
+                    dialogCombination[0] = "FindingAttractions";
                     break;
                 case "Understood, I am searching the nearby restaurant ...":
                     dialogCombination[0] = "FindingRestaurants";
