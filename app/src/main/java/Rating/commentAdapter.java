@@ -24,7 +24,8 @@ import java.util.ArrayList;
 public class commentAdapter extends RecyclerView.Adapter<commentAdapter.MyViewHolder> {
 
     private Context context;
-    private ArrayList<String>  name, rating,comment;
+    private ArrayList<String>  name,comment;
+    private ArrayList<Float> rating;
 
 
     commentAdapter(Context context, ArrayList comment, ArrayList name,ArrayList rating){
@@ -49,7 +50,7 @@ public class commentAdapter extends RecyclerView.Adapter<commentAdapter.MyViewHo
 
         holder.comment.setText(String.valueOf(comment.get(position)));
         holder.name.setText(String.valueOf(name.get(position)));
-        holder.ratingBar.setRating(Integer.parseInt(rating.get(position)));
+        holder.ratingBar.setRating(rating.get(position));
 
     }
 

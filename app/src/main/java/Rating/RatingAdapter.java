@@ -24,7 +24,8 @@ import java.util.ArrayList;
 public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHolder> {
 
     private Context context;
-    private ArrayList<String> id, name, rating,comment ,type,address;
+    private ArrayList<String> id, name,comment ,type,address;
+    private ArrayList<Float>  rating;
     Activity activity;
 
 
@@ -54,13 +55,13 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHold
         holder.id_txt.setText(String.valueOf(id.get(position)));
         holder.name_txt.setText(String.valueOf(name.get(position)));
         holder.type_txt.setText(String.valueOf(type.get(position)));
-        holder.ratingBar.setRating(Integer.parseInt(rating.get(position)));
+        holder.ratingBar.setRating((rating.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, InformationActivity.class);
                 intent.putExtra("name",String.valueOf(name.get(position)));
-                intent.putExtra("rating",String.valueOf(rating.get(position)));
+                intent.putExtra("rating",rating.get(position));
                 intent.putExtra("type",String.valueOf(type.get(position)));
                 intent.putExtra("comment",String.valueOf(comment.get(position)));
                 intent.putExtra("address",String.valueOf(address.get(position)));
@@ -75,7 +76,7 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHold
     }
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView id_txt, name_txt, rating_txt, type_txt;
+        TextView id_txt, name_txt, type_txt;
         RatingBar ratingBar;
         LinearLayout mainLayout;
         public MyViewHolder(@NonNull View itemView) {
@@ -85,7 +86,6 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.MyViewHold
             ratingBar = itemView.findViewById(R.id.ratingBar);
             type_txt = itemView.findViewById(R.id.type_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
-
 
         }
     }

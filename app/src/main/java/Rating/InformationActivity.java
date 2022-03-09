@@ -29,7 +29,8 @@ public class InformationActivity extends AppCompatActivity {
     Button button;
     Database db;
     RecyclerView recyclerView;
-    ArrayList<String> name2,comment, rating;
+    ArrayList<String> name2,comment;
+    ArrayList<Float> rating;
     commentAdapter commentAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class InformationActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         name.setText(intent.getStringExtra("name"));
-        ratingBar.setRating(Integer.parseInt(intent.getStringExtra("rating")));
+        ratingBar.setRating(intent.getFloatExtra("rating",0.0f));
         type.setText(intent.getStringExtra("type"));
         address.setText(intent.getStringExtra("address"));
 
@@ -80,7 +81,7 @@ public class InformationActivity extends AppCompatActivity {
             while (c.moveToNext()){
                 comment.add(c.getString(1));
                 name2.add(c.getString(4));
-                rating.add(c.getString(3));
+                rating.add(c.getFloat(3));
             }
         }
     }

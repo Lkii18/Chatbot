@@ -21,8 +21,11 @@ import java.util.ArrayList;
 public class ViewRatingActivity extends AppCompatActivity {
 
     Database db;
-    ArrayList<String> id, name, rating, comment, type, address;
+    ArrayList<String> id, name, comment, type, address;
+    ArrayList<Float> rating;
     RatingAdapter ratingAdapter;
+    int count;
+    float ratings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +58,30 @@ public class ViewRatingActivity extends AppCompatActivity {
             while (cursor.moveToNext()){
                 id.add(cursor.getString(0));
                 name.add(cursor.getString(1));
-                rating.add(cursor.getString(2));
+                Cursor c = db.readComment(cursor.getString(1));
+                if(c.getCount()==0){
+                    Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    while (c.moveToNext()){
+                        count +=1;
+                        ratings += c.getFloat(3);
+                        System.out.println("Text：" + ratings);
+                        System.out.println("Text：" + count);
+
+                    }
+                    ratings = ratings/count;
+
+                }
+                rating.add(ratings);
+                ratings = 0;
+                count = 0;
                 comment.add(cursor.getString(3));
                 type.add(cursor.getString(4));
                 address.add(cursor.getString(5));
+
             }
         }
     }
+
 }
