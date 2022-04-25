@@ -1,42 +1,42 @@
 [
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_item_self.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\chat_item_self.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_comment_row.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_comment_row.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rating_row.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_rating_row.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_information.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_google_maps.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_google_maps.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_google_maps.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_google_maps.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_item_watson.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rating_row.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_rating_row.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rating.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_rating.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rating.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_rating.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_comment_row.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_comment_row.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_chat_room.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\content_chat_room.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_rating.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_view_rating.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_item_watson.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chat_item_self.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\chat_item_self.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_rating.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_view_rating.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_information.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_chat_room.xml",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\content_chat_room.xml"
     }
 ]

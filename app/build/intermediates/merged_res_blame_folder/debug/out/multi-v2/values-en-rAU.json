@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lkii\\.gradle\\caches\\transforms-3\\b2350dd42fec0af8521f83d59b492efe\\transformed\\core-1.7.0\\res\\values-en-rAU\\values-en-rAU.xml",

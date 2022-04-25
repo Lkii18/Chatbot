@@ -9,6 +9,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
 public class Database extends SQLiteOpenHelper {
 
     private Context context;
@@ -29,6 +34,7 @@ public class Database extends SQLiteOpenHelper {
     private static final String COLUMN_NAME2 = "name";
     private static final String COLUMN_RATING2 = "rating";
     private static final String COLUMN_USERNAME = "username";
+    private static final String COLUMN_DATE= "date";
     public Database(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
@@ -66,10 +72,14 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+
         cv.put(COLUMN_NAME2, name);
         cv.put(COLUMN_USERNAME, username);
         cv.put(COLUMN_RATING2, rating);
         cv.put(COLUMN_COMMENT2, comment);
+        cv.put(COLUMN_DATE, formatter.format(date));
 
         long result = db.insert(TABLE_NAME2, null, cv);
 

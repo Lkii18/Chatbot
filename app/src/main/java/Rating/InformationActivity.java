@@ -20,7 +20,9 @@ import android.widget.Toast;
 import com.example.vmac.WatBot.MainActivity;
 import com.example.vmac.WatBot.R;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class InformationActivity extends AppCompatActivity {
 
@@ -29,7 +31,7 @@ public class InformationActivity extends AppCompatActivity {
     Button button;
     Database db;
     RecyclerView recyclerView;
-    ArrayList<String> name2,comment;
+    ArrayList<String> name2,comment,date;
     ArrayList<Float> rating;
     commentAdapter commentAdapter;
     @Override
@@ -63,9 +65,10 @@ public class InformationActivity extends AppCompatActivity {
         comment = new ArrayList<>();
         name2 = new ArrayList<>();
         rating = new ArrayList<>();
+        date = new ArrayList<>();
         storeDataInArray();
         recyclerView.setLayoutManager(new LinearLayoutManager(InformationActivity.this));
-        commentAdapter = new commentAdapter(InformationActivity.this,comment,name2,rating);
+        commentAdapter = new commentAdapter(InformationActivity.this,comment,name2,rating,date);
         recyclerView.setAdapter(commentAdapter);
 
     }
@@ -82,6 +85,7 @@ public class InformationActivity extends AppCompatActivity {
                 comment.add(c.getString(1));
                 name2.add(c.getString(4));
                 rating.add(c.getFloat(3));
+                date.add(c.getString(5));
             }
         }
     }

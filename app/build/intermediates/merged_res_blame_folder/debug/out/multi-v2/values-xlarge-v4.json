@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lkii\\.gradle\\caches\\transforms-3\\d691b2c4cce06c2384dc4faad7b36233\\transformed\\appcompat-1.4.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

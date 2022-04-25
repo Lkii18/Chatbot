@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Chatbot1/app/src/main/res/layout/activity_comment_row.xml" value="0.33" />
+        <entry key="..\:/Chatbot1/app/src/main/res/layout/activity_rating.xml" value="0.31521739130434784" />
+        <entry key="..\:/Chatbot1/app/src/main/res/layout/activity_view_rating.xml" value="0.31521739130434784" />
+        <entry key="..\:/ChatbotDate/app/src/main/res/layout/activity_comment_row.xml" value="0.31521739130434784" />
+        <entry key="..\:/ChatbotDate/app/src/main/res/layout/activity_information.xml" value="0.31521739130434784" />
+        <entry key="..\:/ChatbotDate/app/src/main/res/layout/activity_rating.xml" value="0.31521739130434784" />
+        <entry key="..\:/ChatbotDate/app/src/main/res/layout/activity_rating_row.xml" value="0.31521739130434784" />
         <entry key="..\:/Users/tw215/AndroidStudioProjects/ChatbotTest/app/src/main/res/drawable/bg_bubble_watbot.xml" value="0.351" />
         <entry key="..\:/Users/tw215/AndroidStudioProjects/ChatbotTest/app/src/main/res/drawable/button_background.xml" value="0.2815" />
         <entry key="..\:/Users/tw215/AndroidStudioProjects/ChatbotTest/app/src/main/res/layout/activity_google_maps.xml" value="0.317481884057971" />

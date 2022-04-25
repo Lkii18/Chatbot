@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Chatbot1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
+            "outputFile": "D:\\ChatbotDate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lkii\\.gradle\\caches\\transforms-3\\d6425a77e9313dcc62898d782048cf89\\transformed\\jetified-places-2.5.0\\res\\values-eu\\values.xml",

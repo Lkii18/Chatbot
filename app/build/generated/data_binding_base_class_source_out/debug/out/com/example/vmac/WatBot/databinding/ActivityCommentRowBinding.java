@@ -25,6 +25,9 @@ public final class ActivityCommentRowBinding implements ViewBinding {
   public final TextView cComment;
 
   @NonNull
+  public final TextView cDate;
+
+  @NonNull
   public final TextView cName;
 
   @NonNull
@@ -40,10 +43,12 @@ public final class ActivityCommentRowBinding implements ViewBinding {
   public final TextView userName2;
 
   private ActivityCommentRowBinding(@NonNull LinearLayout rootView, @NonNull TextView cComment,
-      @NonNull TextView cName, @NonNull RatingBar cRatingBar, @NonNull CardView cardView,
-      @NonNull LinearLayout commentLayout, @NonNull TextView userName2) {
+      @NonNull TextView cDate, @NonNull TextView cName, @NonNull RatingBar cRatingBar,
+      @NonNull CardView cardView, @NonNull LinearLayout commentLayout,
+      @NonNull TextView userName2) {
     this.rootView = rootView;
     this.cComment = cComment;
+    this.cDate = cDate;
     this.cName = cName;
     this.cRatingBar = cRatingBar;
     this.cardView = cardView;
@@ -84,6 +89,12 @@ public final class ActivityCommentRowBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.c_date;
+      TextView cDate = ViewBindings.findChildViewById(rootView, id);
+      if (cDate == null) {
+        break missingId;
+      }
+
       id = R.id.c_name;
       TextView cName = ViewBindings.findChildViewById(rootView, id);
       if (cName == null) {
@@ -110,8 +121,8 @@ public final class ActivityCommentRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCommentRowBinding((LinearLayout) rootView, cComment, cName, cRatingBar,
-          cardView, commentLayout, userName2);
+      return new ActivityCommentRowBinding((LinearLayout) rootView, cComment, cDate, cName,
+          cRatingBar, cardView, commentLayout, userName2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

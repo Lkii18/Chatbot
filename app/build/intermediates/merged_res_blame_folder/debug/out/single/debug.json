@@ -1,114 +1,114 @@
 [
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_send.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_send.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_rating.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_rating.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_information.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_information.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_send.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_send.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_rating_row.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_rating_row.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_information.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_information.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\drawable\\ic_add.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_mic.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_mic.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_mic.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_mic.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_watbot.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\drawable\\bg_bubble_watbot.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\drawable\\button_background.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_send.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_send.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\drawable\\button_background.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_view_rating.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_view_rating.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_send.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-hdpi\\ic_send.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_mic.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_mic.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_send.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-mdpi\\ic_send.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_send.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_send.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_watson.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_send.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_send.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_view_rating.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_view_rating.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_mic.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_mic.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_google_maps.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_google_maps.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_watbot.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\drawable\\bg_bubble_watbot.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_send.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-hdpi\\ic_send.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_mic.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-mdpi\\ic_mic.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\menu\\menu.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_splash.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\drawable\\backgroud_splash.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_self.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\drawable\\bg_bubble_self.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment_row.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_comment_row.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_watson.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\chat_item_watson.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_mic.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_mic.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_self.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\chat_item_self.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_mic.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-hdpi\\ic_mic.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_send.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-mdpi\\ic_send.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_bubble_self.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\drawable\\bg_bubble_self.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_icon.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_item_self.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\chat_item_self.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_google_maps.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_google_maps.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\drawable\\ic_add.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_mic.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-mdpi\\ic_mic.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_send.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_send.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment_row.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_comment_row.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\xml_actions.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\xml\\actions.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\xml_actions.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\xml\\actions.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\drawable_backgroud_splash.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\drawable\\backgroud_splash.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_content_chat_room.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\content_chat_room.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_mic.png.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\mipmap-hdpi\\ic_mic.png"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_rating.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\activity_rating.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_rating_row.xml.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\layout\\activity_rating_row.xml"
     },
     {
-        "merged": "D:\\Chatbot1\\app\\build\\intermediates\\merged_res\\debug\\layout_content_chat_room.xml.flat",
-        "source": "D:\\Chatbot1\\app\\src\\main\\res\\layout\\content_chat_room.xml"
+        "merged": "D:\\ChatbotDate\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_mic.png.flat",
+        "source": "D:\\ChatbotDate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_mic.png"
     }
 ]

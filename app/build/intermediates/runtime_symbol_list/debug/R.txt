@@ -1851,6 +1851,7 @@ int id btn_send 0x7f080063
 int id buttonPanel 0x7f080064
 int id c 0x7f080065
 int id c_comment 0x7f080066
+int id c_date 0x7f0801b2
 int id c_name 0x7f080067
 int id c_ratingBar 0x7f080068
 int id cache_measures 0x7f080069

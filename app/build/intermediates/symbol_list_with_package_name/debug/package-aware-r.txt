@@ -1852,6 +1852,7 @@ id btn_send
 id buttonPanel
 id c
 id c_comment
+id c_date
 id c_name
 id c_ratingBar
 id cache_measures
