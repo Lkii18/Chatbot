@@ -476,7 +476,7 @@ public class MainActivity extends AppCompatActivity {
                 case "I see, where do you want to go?":
                     dialogCombination[0] = "FindingAttractions";
                     break;
-                case "Understood, I am searching the nearby restaurant ...":
+                case "Understood, I am searching nearby restaurants...":
                     dialogCombination[0] = "FindingRestaurants";
                     dialogCombination[1] = "n/a";
                     break;

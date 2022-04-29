@@ -17,6 +17,11 @@ import com.example.vmac.WatBot.MainActivity;
 import com.example.vmac.WatBot.R;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ViewRatingActivity extends AppCompatActivity {
 
@@ -43,6 +48,22 @@ public class ViewRatingActivity extends AppCompatActivity {
         address = new ArrayList<>();
 
         storeDataInArray();
+        Map<String, Float> sorting = new HashMap<String, Float>();
+        for(int i=0; i<name.size(); i++){
+            sorting.put(name.get(i),rating.get(i));
+        }
+        Object[] a = sorting.entrySet().toArray();
+        Arrays.sort(a, new Comparator() {
+            public int compare(Object o1, Object o2) {
+                return ((Map.Entry<String, Float>) o2).getValue()
+                        .compareTo(((Map.Entry<String, Float>) o1).getValue());
+            }
+        });
+        name.clear();
+        for ( String key : sorting.keySet() ) {
+            name.add(key);
+        }
+        Collections.sort(rating, Collections.reverseOrder());
         recyclerView.setLayoutManager(new LinearLayoutManager(ViewRatingActivity.this));
         ratingAdapter = new RatingAdapter(ViewRatingActivity.this,this,id,name,rating,comment,type,address);
         recyclerView.setAdapter(ratingAdapter);
@@ -56,8 +77,7 @@ public class ViewRatingActivity extends AppCompatActivity {
         }
         else{
             while (cursor.moveToNext()){
-                id.add(cursor.getString(0));
-                name.add(cursor.getString(1));
+
                 Cursor c = db.readComment(cursor.getString(1));
                 if(c.getCount()==0){
                     Toast.makeText(this, "No data", Toast.LENGTH_SHORT).show();
@@ -74,6 +94,8 @@ public class ViewRatingActivity extends AppCompatActivity {
 
                 }
                 rating.add(ratings);
+                id.add(cursor.getString(0));
+                name.add(cursor.getString(1));
                 ratings = 0;
                 count = 0;
                 comment.add(cursor.getString(3));
@@ -81,7 +103,9 @@ public class ViewRatingActivity extends AppCompatActivity {
                 address.add(cursor.getString(5));
 
             }
+
         }
+
     }
 
 }
