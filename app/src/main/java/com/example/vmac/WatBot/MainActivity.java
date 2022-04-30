@@ -16,8 +16,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -83,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
 
   //All possibilites of dialog combination.
-  String[] dialogCombination= {null,null};
+  String[] dialogCombination= {"",""};
   //All HK region, used for searching inputted message.
   public static String[] hkRegion= {"Tsuen Wan","ShaTin","Central and Western District","Eastern District","Islands District","Kowloon City","Kwai Tsing","Kwun Tong","North District","Sai Kung","Sham Shui Po","Southern District","Tai Po","Tuen Mun","Wan Chai","Wong Tai Sin","Yau Tsim Mong","Yuen Long"};
 
@@ -190,7 +188,6 @@ public class MainActivity extends AppCompatActivity {
         return(super.onOptionsItemSelected(item));
     }
 
-
     // Speech-to-Text Record Audio permission
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -219,15 +216,12 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         // if (!permissionToRecordAccepted ) finish();
-
     }
-
     protected void makeRequest() {
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.RECORD_AUDIO},
                 MicrophoneHelper.REQUEST_PERMISSION);
     }
-
 
     // Sending a message to Watson Assistant Service
     private void sendMessage() {
@@ -337,7 +331,6 @@ public class MainActivity extends AppCompatActivity {
                         thread.start();
                     }
 
-
     //Record a message via Watson Speech to Text
     private void recordMessage() {
         if (listening != true) {
@@ -367,11 +360,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Check Internet Connection
-     *
-     * @return
-     */
     private boolean checkInternetConnection() {
         // get Connectivity Manager object to check connection
         ConnectivityManager cm =
@@ -430,7 +418,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
    /* private class SayTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
@@ -463,11 +450,9 @@ public class MainActivity extends AppCompatActivity {
         public void onDisconnected() {
             //enableMicButton();
         }
-
     }
 
     private void ActionAfterResponse(String chatBotMessage){
-
 
             switch (chatBotMessage) {
                 case "I see, where do you prefer to have a meal?":
@@ -484,18 +469,23 @@ public class MainActivity extends AppCompatActivity {
                     dialogCombination[0] = "FindingAttractions";
                     dialogCombination[1] = "n/a";
                     break;
+                case "I see, please input the keywords you want to search.":
+                    dialogCombination[0] = "SearchingKeywords";
+                    break;
                 case "Checking rating... ":
                     Intent Rating = new Intent(MainActivity.this, ViewRatingActivity.class);
                     startActivity(Rating);
                     break;
 
                 default:
-                    for(int i=0;i<hkRegion.length;i++)
-                    {
-                        if (getUserTargetedRegion(chatBotMessage).equals(hkRegion[i]))
-                        {
-                            dialogCombination[1] = hkRegion[i];
-                            break;
+                    if(dialogCombination[0].equals("SearchingKeywords")){
+                        dialogCombination[1] = getUserInputtedKeyword(chatBotMessage);
+                    } else {
+                        for (int i = 0; i < hkRegion.length; i++) {
+                            if (getUserInputtedKeyword(chatBotMessage).equals(hkRegion[i])) {
+                                dialogCombination[1] = hkRegion[i];
+                                break;
+                            }
                         }
                     }
                     break;
@@ -513,7 +503,6 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("The dialog is not completed");
                 return false;
             }
-
         }
         return true;
     }
@@ -532,18 +521,20 @@ public class MainActivity extends AppCompatActivity {
         String returnMessage = response.getOutput().getGeneric().get(0).title();
         if(returnMessage==null)
             returnMessage=response.getOutput().getGeneric().get(0).text();
-
         return returnMessage;
     }
     private void requestPermissions() {
         ActivityCompat.requestPermissions(this, new String[]{
+
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+
     }
-    private String getUserTargetedRegion(String dialog){
+    private String getUserInputtedKeyword(String dialog){
 
         int position= dialog.indexOf(":");
         return dialog.substring(position+2,dialog.length()-1);
+
     }
 }
 

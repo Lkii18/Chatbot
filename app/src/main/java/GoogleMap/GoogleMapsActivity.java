@@ -51,7 +51,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCallback{
 
     private double latitude =22.302711,  longitude=114.177216;
     private int ProximityRadius = 10000;
@@ -97,6 +97,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
     String attraction = "attraction", restaurant = "restaurant";
     String SentMessage;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +114,6 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         //Find current Location
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
-
 
 
 
@@ -146,8 +147,6 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
 
     }
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -163,7 +162,9 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
-
+        mMap.getUiSettings().setCompassEnabled(true);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setRotateGesturesEnabled(true);
     }
 
     public void ActionFliter() {
@@ -171,21 +172,24 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         switch (dialogCombination[0]) {
             case "FindingRestaurants":
                 if(dialogCombination[1].equals("n/a")) {
-                    System.out.println("Test 1 is:"+dialogCombination[1]);
+
                     zoomToCurrentLocation("restaurant");
                     break;
                 }
                 else {
-                    System.out.println("Test 2 is:"+dialogCombination[1]);
                     zoomToSpecificLocation("restaurant");}
                 break;
+
             case "FindingAttractions":
+
                 if(dialogCombination[1].equals("n/a"))
                     zoomToCurrentLocation("attraction");
                 else
                     zoomToSpecificLocation("attraction");
                 break;
-
+            case "SearchingKeywords":
+                FindLocationByName(dialogCombination[1]);
+                break;
         }
     }
 
@@ -249,6 +253,28 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     }
 
+    //Find location by user inputted Name:
+    private void FindLocationByName(String name){
+
+        Object transferData[] = new Object[2];
+        GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+        mMap.clear();
+        transferData[0] = mMap;
+        getNearbyPlaces.setSearchByName(name);
+        getNearbyPlaces.setContext(this);
+        try{
+            JSONObject jsonObject = new JSONObject(readCoordinates());
+            JSONArray jsonArray = jsonObject.getJSONArray("regions");
+            latitude =Double.parseDouble(jsonArray.getJSONObject(0).getString("latitude"));
+            longitude=Double.parseDouble(jsonArray.getJSONObject(0).getString("longitude"));
+            url = getUrl2(latitude, longitude);
+            transferData[1] = url;
+
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+        getNearbyPlaces.execute(transferData);
+    }
     private String readCoordinates(){
         String jsonString=null;
         try {
@@ -271,6 +297,19 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         googleURL.append("location=" + latitide + "," + longitude);
         googleURL.append("&radius=" + ProximityRadius);
         googleURL.append("&type=" + nearbyPlace);
+        googleURL.append("&sensor=true");
+        googleURL.append("&key=" + "AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0");
+
+        Log.d("GoogleMapsActivity", "url = " + googleURL.toString());
+
+        return googleURL.toString();
+    }
+
+    private String getUrl2(double latitide, double longitude) {
+        StringBuilder googleURL = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
+        googleURL.append("location=" + latitide + "," + longitude);
+        googleURL.append("&radius=" + ProximityRadius);
+        googleURL.append("&type=restaurants,tourist_attraction");
         googleURL.append("&sensor=true");
         googleURL.append("&key=" + "AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0");
 
