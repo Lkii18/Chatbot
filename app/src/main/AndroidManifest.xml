@@ -34,6 +34,16 @@
         <activity
             android:name="Rating.RatingActivity"
             android:exported="false" />
+
+        <activity
+            android:name="Rating.ViewRatingActivityChinese"
+            android:exported="false" />
+        <activity
+            android:name="Rating.RatingActivityChinese"
+            android:exported="false" />
+        <activity
+            android:name="Rating.InformationActivityChinese"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

@@ -2239,12 +2239,17 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_comment_row 0x7f0b001c
+int layout activity_comment_row_c 0x7f0b0052
 int layout activity_google_maps 0x7f0b001d
 int layout activity_information 0x7f0b001e
+int layout activity_information_c 0x7f0b0053
 int layout activity_main 0x7f0b001f
 int layout activity_rating 0x7f0b0020
+int layout activity_rating_c 0x7f0b0054
 int layout activity_rating_row 0x7f0b0021
+int layout activity_rating_row_c 0x7f0b0055
 int layout activity_view_rating 0x7f0b0022
+int layout activity_view_rating_c 0x7f0b0056
 int layout chat_item_self 0x7f0b0023
 int layout chat_item_watson 0x7f0b0024
 int layout content_chat_room 0x7f0b0025

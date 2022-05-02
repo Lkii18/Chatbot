@@ -2240,12 +2240,17 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_comment_row
+layout activity_comment_row_c
 layout activity_google_maps
 layout activity_information
+layout activity_information_c
 layout activity_main
 layout activity_rating
+layout activity_rating_c
 layout activity_rating_row
+layout activity_rating_row_c
 layout activity_view_rating
+layout activity_view_rating_c
 layout chat_item_self
 layout chat_item_watson
 layout content_chat_room

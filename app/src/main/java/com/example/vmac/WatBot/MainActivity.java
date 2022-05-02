@@ -57,6 +57,7 @@ import java.util.List;
 
 import GoogleMap.GoogleMapsActivity;
 import Rating.ViewRatingActivity;
+import Rating.ViewRatingActivityChinese;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -496,9 +497,14 @@ public class MainActivity extends AppCompatActivity {
                     dialogCombination[0] = "SearchingKeywords";
                     break;
                 case "Checking rating... ":
-                case "正在查看評分......":
                     Intent Rating = new Intent(MainActivity.this, ViewRatingActivity.class);
                     startActivity(Rating);
+                    break;
+                case "正在查看評分......":
+                    Intent RatingC = new Intent(MainActivity.this, ViewRatingActivityChinese.class);
+                    System.out.println("Test!");
+                    startActivity(RatingC);
+
                     break;
 
                 default:
