@@ -28,6 +28,7 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String>
     private GoogleMap mMap;
     private String searchByName="";
     public Context context;
+    public boolean cht = false;
     private double latitude=0,longitude=0;
     private List<HashMap<String, String>> nearByPlacesList = null;
 
@@ -45,6 +46,14 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String>
 
     public void setSearchByName(String searchByName) {
         this.searchByName = searchByName;
+    }
+
+    public boolean isCht() {
+        return cht;
+    }
+
+    public void setCht(boolean cht) {
+        this.cht = cht;
     }
 
     @Override
@@ -73,10 +82,8 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String>
                 catch (IOException e) {
                 e.printStackTrace();
                 }try {
-
                     latitude =Double.parseDouble(jsonArray.getJSONObject(i).getString("latitude"));
                     longitude=Double.parseDouble(jsonArray.getJSONObject(i).getString("longitude"));
-                    System.out.println("Region"+i);
                     url = getUrl(latitude, longitude);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -157,6 +164,8 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String>
         googleURL.append("&radius=10000");
         googleURL.append("&type=restaurants,tourist_attraction");
         googleURL.append("&sensor=true");
+        if(cht)
+            googleURL.append("&language=zh-HK");
         googleURL.append("&key=" + "AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0");
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());

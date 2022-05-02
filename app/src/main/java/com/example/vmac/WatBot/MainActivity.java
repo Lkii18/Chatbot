@@ -46,6 +46,11 @@ import com.ibm.watson.speech_to_text.v1.model.SpeechRecognitionResults;
 import com.ibm.watson.speech_to_text.v1.websocket.BaseRecognizeCallback;
 import com.ibm.watson.text_to_speech.v1.TextToSpeech;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,8 +89,7 @@ public class MainActivity extends AppCompatActivity {
   String[] dialogCombination= {"",""};
   //All HK region, used for searching inputted message.
   public static String[] hkRegion= {"Tsuen Wan","ShaTin","Central and Western District","Eastern District","Islands District","Kowloon City","Kwai Tsing","Kwun Tong","North District","Sai Kung","Sham Shui Po","Southern District","Tai Po","Tuen Mun","Wan Chai","Wong Tai Sin","Yau Tsim Mong","Yuen Long"};
-
-
+  public boolean cht = false;
   private void createServices() {
     watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator(mContext.getString(R.string.assistant_apikey)));
     watsonAssistant.setServiceUrl(mContext.getString(R.string.assistant_url));
@@ -455,24 +459,44 @@ public class MainActivity extends AppCompatActivity {
     private void ActionAfterResponse(String chatBotMessage){
 
             switch (chatBotMessage) {
+                case "有什麼可以幫到你的？":
+                    cht = true;
+                    for(int i=0;i<dialogCombination.length;i++)
+                    {
+                        dialogCombination[i]="";
+                    }
+                    break;
+                case "How can I help you?":
+                    cht = false;
+                    for(int i=0;i<dialogCombination.length;i++)
+                    {
+                        dialogCombination[i]="";
+                    }
+                    break;
                 case "I see, where do you prefer to have a meal?":
+                case "明白，想去哪裡用餐?":
                     dialogCombination[0] = "FindingRestaurants";
                     break;
                 case "I see, where do you want to go?":
+                case "明白，想去哪裡遊覽?":
                     dialogCombination[0] = "FindingAttractions";
                     break;
                 case "Understood, I am searching nearby restaurants...":
+                case "收到，正在搜尋附近餐廳。":
                     dialogCombination[0] = "FindingRestaurants";
                     dialogCombination[1] = "n/a";
                     break;
                 case "Understood, I am searching nearby attractions...":
+                case "收到，正在搜尋附近景點。":
                     dialogCombination[0] = "FindingAttractions";
                     dialogCombination[1] = "n/a";
                     break;
                 case "I see, please input the keywords you want to search.":
+                case "明白，請輸入關鍵字。":
                     dialogCombination[0] = "SearchingKeywords";
                     break;
                 case "Checking rating... ":
+                case "正在查看評分......":
                     Intent Rating = new Intent(MainActivity.this, ViewRatingActivity.class);
                     startActivity(Rating);
                     break;
@@ -481,11 +505,24 @@ public class MainActivity extends AppCompatActivity {
                     if(dialogCombination[0].equals("SearchingKeywords")){
                         dialogCombination[1] = getUserInputtedKeyword(chatBotMessage);
                     } else {
-                        for (int i = 0; i < hkRegion.length; i++) {
-                            if (getUserInputtedKeyword(chatBotMessage).equals(hkRegion[i])) {
-                                dialogCombination[1] = hkRegion[i];
-                                break;
+                        try{
+                            JSONObject jsonObject = new JSONObject(readCoordinates());
+                            JSONArray jsonArray = jsonObject.getJSONArray("regions");
+                            for(int i = 0; i<jsonArray.length();i++)
+                            {
+                                boolean finish = false;
+                                for(int x=0; x<jsonArray.getJSONObject(i).getJSONArray("name").length();x++){
+                                    if (getUserInputtedKeyword(chatBotMessage).equals(jsonArray.getJSONObject(i).getJSONArray("name").getString(x))) {
+                                        dialogCombination[1] = jsonArray.getJSONObject(i).getJSONArray("name").getString(x);
+                                        finish = true;
+                                        break;
+                                    }
+                                }
+                                if(finish)
+                                    break;
                             }
+                        }catch(JSONException e){
+                            e.printStackTrace();
                         }
                     }
                     break;
@@ -499,10 +536,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<dialogCombination.length;i++)
         {
             if (dialogCombination[i]==null||dialogCombination[i].equals(""))
-            {
-                System.out.println("The dialog is not completed");
                 return false;
-            }
         }
         return true;
     }
@@ -510,6 +544,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(MainActivity.this, GoogleMapsActivity.class);
         intent.putExtra("dialogCombination", InputtedDialog);
+        intent.putExtra("cht", cht);
         startActivity(intent);
         for(int i=0;i<dialogCombination.length;i++)
         {
@@ -534,6 +569,23 @@ public class MainActivity extends AppCompatActivity {
 
         int position= dialog.indexOf(":");
         return dialog.substring(position+2,dialog.length()-1);
+
+    }
+    private String readCoordinates(){
+        String jsonString=null;
+        try {
+            InputStream is = getAssets().open("Coordinates.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            jsonString = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return jsonString;
 
     }
 }

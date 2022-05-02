@@ -103,9 +103,7 @@ public class DataParser
                 if(compareKeyword(temp.getString("name")))
                 {
                     NearbyPlaceMap = getSingleNearbyPlace(temp);
-                    System.out.println("temp: "+ temp);
                     NearbyPlacesList.add(NearbyPlaceMap);
-                    System.out.println("Size1: "+NearbyPlacesList.size());
                 }
             }
             catch (JSONException e)
@@ -113,7 +111,6 @@ public class DataParser
                 e.printStackTrace();
             }
         }
-        System.out.println("Size2: "+NearbyPlacesList.size());
         return NearbyPlacesList;
     }
 

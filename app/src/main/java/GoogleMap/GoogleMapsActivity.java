@@ -96,19 +96,17 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
     public String[] dialogCombination=new String[2]; // possibilities of every choices of the users.
     String attraction = "attraction", restaurant = "restaurant";
     String SentMessage;
-
-
+    public boolean cht = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps);
-
         //Get the message sent by user
         Intent intent = getIntent();
         if (intent != null) {
             dialogCombination = intent.getStringArrayExtra("dialogCombination");
-
+            cht= intent.getBooleanExtra("cht",false);
         }
 
         //Find current Location
@@ -137,6 +135,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         mapFragment.getMapAsync(this);
 
         //Check Corresponding Actions after 5 secs(need to be 5 sec to get location)
+
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -145,8 +144,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             }
         }, 5000);
 
-
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -168,11 +167,10 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
     }
 
     public void ActionFliter() {
-
+        System.out.println("In the Fliter");
         switch (dialogCombination[0]) {
             case "FindingRestaurants":
                 if(dialogCombination[1].equals("n/a")) {
-
                     zoomToCurrentLocation("restaurant");
                     break;
                 }
@@ -198,6 +196,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+        if(cht)
+            getNearbyPlaces.setCht(true);
         mMap.clear();
         if(type == "restaurant") {
             url = getUrl(latitude, longitude, "restaurant");
@@ -220,18 +220,25 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+        if(cht)
+            getNearbyPlaces.setCht(true);
         mMap.clear();
 
         try{
             JSONObject jsonObject = new JSONObject(readCoordinates());
             JSONArray jsonArray = jsonObject.getJSONArray("regions");
             for(int i=0; i<jsonArray.length();i++) {
-                if (jsonArray.getJSONObject(i).getString("name").equals(dialogCombination[1]))
-                {
-                    latitude =Double.parseDouble(jsonArray.getJSONObject(i).getString("latitude"));
-                    longitude=Double.parseDouble(jsonArray.getJSONObject(i).getString("longitude"));
+                boolean finish = false;
+                for(int x=0; x<jsonArray.getJSONObject(i).getJSONArray("name").length();x++)
+                    if (jsonArray.getJSONObject(i).getJSONArray("name").getString(x).equals(dialogCombination[1]))
+                    {
+                        latitude =Double.parseDouble(jsonArray.getJSONObject(i).getString("latitude"));
+                        longitude=Double.parseDouble(jsonArray.getJSONObject(i).getString("longitude"));
+                        finish= true;
+                        break;
+                    }
+                if(finish)
                     break;
-                }
             }
         }catch(JSONException e){
             e.printStackTrace();
@@ -258,16 +265,19 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+
         mMap.clear();
         transferData[0] = mMap;
         getNearbyPlaces.setSearchByName(name);
         getNearbyPlaces.setContext(this);
+        if(cht)
+            getNearbyPlaces.setCht(true);
         try{
             JSONObject jsonObject = new JSONObject(readCoordinates());
             JSONArray jsonArray = jsonObject.getJSONArray("regions");
             latitude =Double.parseDouble(jsonArray.getJSONObject(0).getString("latitude"));
             longitude=Double.parseDouble(jsonArray.getJSONObject(0).getString("longitude"));
-            url = getUrl2(latitude, longitude);
+            url = getUrlAllType(latitude, longitude);
             transferData[1] = url;
 
         }catch(JSONException e){
@@ -298,6 +308,10 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         googleURL.append("&radius=" + ProximityRadius);
         googleURL.append("&type=" + nearbyPlace);
         googleURL.append("&sensor=true");
+
+        if(cht)
+            googleURL.append("&language=zh-HK");
+
         googleURL.append("&key=" + "AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0");
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());
@@ -305,12 +319,16 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         return googleURL.toString();
     }
 
-    private String getUrl2(double latitide, double longitude) {
+    private String getUrlAllType(double latitide, double longitude) {
         StringBuilder googleURL = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
         googleURL.append("location=" + latitide + "," + longitude);
         googleURL.append("&radius=" + ProximityRadius);
         googleURL.append("&type=restaurants,tourist_attraction");
         googleURL.append("&sensor=true");
+
+        if(cht)
+            googleURL.append("&language=zh-HK");
+
         googleURL.append("&key=" + "AIzaSyAUJFFocZMuMZvjS5-tXBDDhKXATeJAXA0");
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());

@@ -1,93 +1,94 @@
 {
   "regions": [
     {
-      "name": "Tsuen Wan",
+      "name": ["Tsuen Wan","荃灣"],
       "latitude" :"22.37137",
       "longitude": "114.11329"
     },
     {
-      "name": "Central and Western District",
+      "name": ["Central and Western District","中西區"],
       "latitude" :"22.284924",
       "longitude": "114.158049"
     },
     {
-      "name": "Wan Chai",
+      "name": ["Wan Chai","灣仔"],
       "latitude" :"22.27785995",
       "longitude": "114.17362"
     },
     {
-      "name": "Eastern District",
+      "name": ["Eastern District","東區"],
       "latitude" :"22.285410",
       "longitude": "114.215215"
     },
     {
-      "name": "Southern District",
+      "name": ["Southern District","南區"],
       "latitude" :"22.248382",
       "longitude": "114.154657"
     },
     {
+      "name": ["Southern District","南區"],
       "name": "Yau Tsim Mong",
       "latitude" :"22.316086",
       "longitude": "114.167430"
     },
     {
-      "name": "Sham Shui Po",
+      "name": ["Sham Shui Po","深水埗"],
       "latitude" :"22.328574",
       "longitude": "114.158463"
     },
     {
-      "name": "Kowloon City",
+      "name": ["Kowloon City","九龍城"],
       "latitude" :"22.326443",
       "longitude": "114.190137"
     },
     {
-      "name": "Wong Tai Sin",
+      "name": ["Wong Tai Sin","黃大仙"],
       "latitude" :"22.342452",
       "longitude": "114.194149"
     },
     {
-      "name": "Kwun Tong",
+      "name": ["Kwun Tong","觀塘"],
       "latitude" :"22.311725",
       "longitude": "114.223872"
     },
     {
-      "name": "Kwai Tsing",
+      "name": ["Kwai Tsing","葵青"],
       "latitude" :"22.349294",
       "longitude": "114.115603"
 
     },
     {
-      "name": "Tuen Mun",
+      "name": ["Tuen Mun","屯門"],
       "latitude" :"22.388466",
       "longitude": "113.972137"
     },
     {
-      "name": "Yuen Long",
+      "name": ["Yuen Long","元朗"],
       "latitude" :"22.443373",
       "longitude": "114.028357"
     },
     {
-      "name": "Islands District",
+      "name": ["Islands District","離島區"],
       "latitude" :"22.291147",
       "longitude": "113.939174"
     },
     {
-      "name": "Northern District",
+      "name": ["Northern District","北區"],
       "latitude" :"22.500583",
       "longitude": "114.130978"
     },
     {
-      "name": "Tai Po",
+      "name": ["Tai Po","大埔"],
       "latitude" :"22.448579",
       "longitude": "114.167375"
     },
     {
-      "name": "ShaTin",
+      "name": ["ShaTin","沙田"],
       "latitude" :"22.38333",
       "longitude": "114.18333"
     },
     {
-      "name": "Sai Kung",
+      "name": ["Sai Kung","西貢"],
       "latitude" :"22.381365",
       "longitude": "114.269591"
     }
