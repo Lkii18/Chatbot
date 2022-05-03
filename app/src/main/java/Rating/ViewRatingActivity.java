@@ -1,6 +1,7 @@
 package Rating;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Toast;
@@ -21,7 +23,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ViewRatingActivity extends AppCompatActivity {
 
@@ -32,6 +37,7 @@ public class ViewRatingActivity extends AppCompatActivity {
     int count;
     float ratings;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,19 +54,19 @@ public class ViewRatingActivity extends AppCompatActivity {
         address = new ArrayList<>();
 
         storeDataInArray();
+        System.out.println("name: "+ name);
         Map<String, Float> sorting = new HashMap<String, Float>();
         for(int i=0; i<name.size(); i++){
             sorting.put(name.get(i),rating.get(i));
         }
-        Object[] a = sorting.entrySet().toArray();
-        Arrays.sort(a, new Comparator() {
-            public int compare(Object o1, Object o2) {
-                return ((Map.Entry<String, Float>) o2).getValue()
-                        .compareTo(((Map.Entry<String, Float>) o1).getValue());
-            }
-        });
+        Map<String, Float> sortedMap = sorting.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+        System.out.println("sorting: " + sortedMap);
         name.clear();
-        for ( String key : sorting.keySet() ) {
+        for ( String key : sortedMap.keySet() ) {
+
             name.add(key);
         }
         Collections.sort(rating, Collections.reverseOrder());
@@ -92,8 +98,10 @@ public class ViewRatingActivity extends AppCompatActivity {
                     }
                     ratings = ratings/count;
 
+
                 }
                 rating.add(ratings);
+
                 id.add(cursor.getString(0));
                 name.add(cursor.getString(1));
                 ratings = 0;
