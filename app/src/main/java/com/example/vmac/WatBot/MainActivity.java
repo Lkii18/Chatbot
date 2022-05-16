@@ -25,6 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.example.vmac.WatBot.Reviewapp.ticketHome;
 import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.http.ServiceCall;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
@@ -159,6 +160,12 @@ public class MainActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(inputMessage.getText().toString().equals("re"))
+                {
+                    Intent myIntent = new Intent(MainActivity.this, ticketHome.class);
+                    MainActivity.this.startActivity(myIntent);
+                    return;
+                }
                 if (checkInternetConnection()) {
                     sendMessage();
                 }
