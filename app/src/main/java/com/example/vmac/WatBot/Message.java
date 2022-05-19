@@ -1,9 +1,5 @@
 package com.example.vmac.WatBot;
 
-/**
- * Created by Vidyasagar Machupalli on 17/11/16.
- */
-
 import com.ibm.watson.assistant.v2.model.RuntimeResponseGeneric;
 
 import java.io.Serializable;
